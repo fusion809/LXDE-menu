@@ -20,10 +20,13 @@
 		<Include>
 			<And>
 				<Category>Utility</Category>
-				<Not><Category>Accessibility</Category></Not>
-				<Not><Category>System</Category></Not>
-        <Not><Category>TextEditor</Category></Not>
-        <Not><Category>FileManager</Category></Not>
+				<Not>
+          <Category>Accessibility</Category>
+          <Category>System</Category>
+          <Category>TextEditor</Category>
+          <Category>FileManager</Category>
+          <Category>TerminalEmulator</Category>
+        </Not>
 			</And>
 		</Include>
 	</Menu> <!-- End Accessories -->
@@ -134,6 +137,28 @@
 		</Include>
 	</Menu> <!-- End Office -->
 
+  <!-- Terminal Emulators-->
+  <Menu>
+    <Name>Terminal Emulators</Name>
+    <Directory>lxde-terminalemulator.directory</Directory>
+    <Include>
+      <And>
+        <Category>TerminalEmulator</Category>
+      </And>
+    </Include>
+  </Menu>
+
+  <!-- Sabayon Weblinks-->
+  <Menu>
+    <Name>Sabayon Weblinks</Name>
+    <Directory>lxde-sabayon.directory</Directory>
+    <Include>
+      <And>
+        <Category>Sabayon</Category>
+      </And>
+    </Include>
+  </Menu>
+
   <!-- Text Editors-->
   <Menu>
     <Name>Text Editors</Name>
@@ -152,10 +177,13 @@
 		<Include>
 			<And>
 				<Category>System</Category>
-				<Not><Category>Settings</Category></Not>
-				<Not><Category>PackageManager</Category></Not>
-        <Not><Category>Virtualization</Category></Not>
-        <Not><Category>FileManager</Category></Not>
+				<Not>
+          <Category>Settings</Category>
+          <Category>PackageManager</Category>
+          <Category>Virtualization</Category>
+          <Category>FileManager</Category>
+          <Category>TerminalEmulator</Category>
+        </Not>
 			</And>
 		</Include>
 	</Menu>	 <!-- End System Tools -->

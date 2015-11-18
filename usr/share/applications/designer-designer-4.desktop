@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Designer
+Type=Application
+Comment=WYSIWYG tool for designing and building Qt-based GUIs
+Exec=designer
+TryExec=designer
+Icon=designer
+Categories=Qt;Development;GUIDesigner;

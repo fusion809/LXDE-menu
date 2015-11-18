@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=vncviewer
+Type=Application
+Comment=A great client/server software package allowing remote network access to graphical desktops.
+Exec=vncviewer
+TryExec=vncviewer
+Icon=vncviewer
+Categories=Network;

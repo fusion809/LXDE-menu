@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=PyMol
+Type=Application
+Comment=A Python-extensible molecular graphics system
+Exec=pymol
+TryExec=pymol
+Icon=pymol
+Categories=Graphics;Education;Science;Chemistry;
+MimeType=chemical/x-pdb;chemical/x-mdl-molfile;chemical/x-mol2;chemical/seq-aa-fasta;chemical/seq-na-fasta;chemical/x-xyz;chemical/x-mdl-sdf;

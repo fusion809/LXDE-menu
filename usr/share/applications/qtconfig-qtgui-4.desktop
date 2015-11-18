@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Qt Configuration Tool
+Type=Application
+Comment=The GUI module for the Qt toolkit
+Exec=qtconfig
+TryExec=qtconfig
+Icon=qtconfig
+Categories=Qt;Settings;DesktopSettings;
