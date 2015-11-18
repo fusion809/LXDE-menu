@@ -20,12 +20,10 @@
 		<Include>
 			<And>
 				<Category>Utility</Category>
-	<!-- Accessibility spec must have either the Utility or Settings
-			 category, and we display an accessibility submenu already for
-			 the ones that do not have Settings, so don't display accessibility
-			 applications here -->
 				<Not><Category>Accessibility</Category></Not>
 				<Not><Category>System</Category></Not>
+        <Not><Category>TextEditor</Category></Not>
+        <Not><Category>FileManager</Category></Not>
 			</And>
 		</Include>
 	</Menu> <!-- End Accessories -->
@@ -49,6 +47,7 @@
 		<Include>
 			<And>
 				<Category>Development</Category>
+        <Not><Category>TextEditor</Category></Not>
 			</And>
 			<Filename>emacs.desktop</Filename>
 		</Include>
@@ -64,6 +63,17 @@
 			</And>
 		</Include>
 	</Menu> <!-- End Education -->
+
+  <!-- File Managers-->
+  <Menu>
+    <Name>File Managers</Name>
+    <Directory>lxde-filemanager.directory</Directory>
+    <Include>
+      <And>
+        <Category>FileManager</Category>
+      </And>
+    </Include>
+  </Menu>
 
 	<!-- Games -->
 	<Menu>
@@ -121,6 +131,17 @@
 		</Include>
 	</Menu> <!-- End Office -->
 
+  <!-- Text Editors-->
+  <Menu>
+    <Name>Text Editors</Name>
+    <Directory>lxde-texteditor.directory</Directory>
+    <Include>
+      <And>
+        <Category>TextEditor</Category>
+      </And>
+    </Include>
+  </Menu>
+
 	<!-- System Tools-->
 	<Menu>
 		<Name>System</Name>
@@ -131,6 +152,7 @@
 				<Not><Category>Settings</Category></Not>
 				<Not><Category>PackageManager</Category></Not>
         <Not><Category>Virtualization</Category></Not>
+        <Not><Category>FileManager</Category></Not>
 			</And>
 		</Include>
 	</Menu>	 <!-- End System Tools -->
