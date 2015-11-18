@@ -58,9 +58,12 @@
 		<Name>Education</Name>
 		<Directory>lxde-education.directory</Directory>
 		<Include>
-			<And>
+			<Or>
 				<Category>Education</Category>
-			</And>
+        <Category>Science</Category>
+        <Category>Math</Category>
+        <Category>Physics</Category>
+			</Or>
 		</Include>
 	</Menu> <!-- End Education -->
 
