@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Sage Notebook
+Icon=sage
+Exec=sage -n
+Type=Application
+Categories=Science;Math;Education;

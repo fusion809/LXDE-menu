@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Links
+Type=Application
+Comment=A fast and lightweight web browser running in both graphics and text mode
+Exec=links -g %u
+TryExec=links
+Icon=links
+Categories=Network;WebBrowser;
+MimeType=x-scheme-handler/http;x-scheme-handler/https;

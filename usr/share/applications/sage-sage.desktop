@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Sage Shell
+Type=Application
+Comment=MAth software for abstract and numerical computations
+Exec=sage
+TryExec=sage
+Icon=sage
+Categories=Education;Science;Math;
+Terminal=true

@@ -1,7 +1,6 @@
 [Desktop Entry]
 Type=Application
 Version=1.0
-Encoding=UTF-8
 Name=SuperTux 2
 Name[en]=SuperTux 2
 GenericName=Platform Game
@@ -36,8 +35,9 @@ Comment[sv]=Ett klassiskt tvådimensionellt plattformsspel
 Comment[pt]=Joga este clássico de plataformas 2D
 Comment[pt_BR]=Encarne o pinguin Tux neste jogo inspirado em clássicos de Pular&Correr
 Comment[hu]=Egy klasszikus 2D-s oldalnézeti játék
-Icon=supertux.png
-Exec=/usr/games/supertux2
+Icon=supertux
+Exec=supertux2
 Terminal=false
 StartupNotify=false
 Categories=Game;ArcadeGame;
+Keywords=game;arcade;platform;

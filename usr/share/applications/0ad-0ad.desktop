@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=0ad
+Type=Application
+Comment=A free, real-time strategy game
+Exec=0ad
+TryExec=0ad
+Icon=0ad
+Categories=Game;StrategyGame;

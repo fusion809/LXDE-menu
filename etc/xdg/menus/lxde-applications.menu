@@ -111,8 +111,18 @@
 		<Include>
 			<And>
 				<Category>Network</Category>
+        <Not>
+          <Category>P2P</Category>
+        </Not>
 			</And>
 		</Include>
+    <SubMenu>
+      <Name>P2P Filetransfer</Name>
+      <Directory>lxde-p2p.directory</Directory>
+      <Include>
+        <Category>P2P</Category>
+      </Include>
+    </SubMenu>
 	</Menu>	 <!-- End Internet -->
 
 	<!-- Multimedia -->
@@ -149,9 +159,10 @@
   </Menu>
 
   <!-- Sabayon Weblinks-->
+  <!-- This currently doesn't work-->
   <Menu>
     <Name>Sabayon Weblinks</Name>
-    <Directory>lxde-sabayon.directory</Directory>
+    <Directory>sabayon-sabayon.directory</Directory>
     <Include>
       <And>
         <Category>Sabayon</Category>
@@ -206,9 +217,12 @@
 		<OnlyUnallocated/>
 		<Include>
 			<And>
-				<Not><Category>Core</Category></Not>
-				<Not><Category>Settings</Category></Not>
-				<Not><Category>Screensaver</Category></Not>
+				<Not>
+          <Category>Core</Category>
+          <Category>Settings</Category>
+          <Category>Screensaver</Category>
+          <Category>Sabayon</Category>
+        </Not>
 			</And>
 		</Include>
 		</Menu> <!-- End Other -->

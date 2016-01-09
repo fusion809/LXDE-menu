@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=PyMol
+Name=PyMOL
 Type=Application
 Comment=A Python-extensible molecular graphics system
 Exec=pymol

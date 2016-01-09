@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=PyCrust (2.8)
+Comment=GUI Python Shell with Filling
+Exec=pycrust-2.8
+Icon=/usr/share/pixmaps/PyCrust.png
+Terminal=false
+Type=Application
+Categories=Development;

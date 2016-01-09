@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=GNU Octave (CLI)
+Type=Application
+Exec=octave --no-gui
+Terminal=true
+Icon=octave
+Categories=Education;Math;Science;ConsoleOnly

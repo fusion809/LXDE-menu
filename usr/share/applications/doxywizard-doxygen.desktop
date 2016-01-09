@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=DoxyWizard 1.8.10
+Type=Application
+Comment=Documentation system for most programming languages
+Exec=doxywizard
+TryExec=doxywizard
+Icon=/usr/share/pixmaps/doxywizard.png
+Categories=Development;

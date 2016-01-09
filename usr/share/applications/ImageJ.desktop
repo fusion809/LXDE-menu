@@ -1,0 +1,14 @@
+[Desktop Entry]
+Version=1.0
+Name=ImageJ
+GenericName=ImageJ
+X-GNOME-FullName=ImageJ
+Comment=Scientific Image Analysis
+Type=Application
+Categories=Education;Science;ImageProcessing;Graphics;
+Exec=/usr/bin/ImageJ
+TryExec=/home/fusion809/Programs/ImageJ/ImageJ
+Terminal=false
+StartupNotify=true
+Icon=/home/fusion809/Programs/ImageJ/images/icon.png
+StartupWMClass=ij-ImageJ

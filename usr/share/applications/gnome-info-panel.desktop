@@ -86,8 +86,9 @@ Comment[nb]=Vis informasjon om systemet
 Comment[nl]=Systeeminformatie bekijken
 Comment[pa]=ਆਪਣੇ ਸਿਸਟਮ ਬਾਰੇ ਜਾਣਕਾਰੀ ਵੇਖੋ
 Comment[pl]=Wyświetlanie informacji o systemie
-Comment[pt]=Visualizar informação sobre o seu sistema
+Comment[pt]=Ver informação sobre o seu sistema
 Comment[pt_BR]=Veja informações sobre seu sistema
+Comment[ro]=Vedeți informații despre sistem
 Comment[ru]=Просмотр информации о системе
 Comment[sk]=Zobrazuje informácie o vašom systéme
 Comment[sl]=Pregled podrobnosti sistema
@@ -111,7 +112,7 @@ OnlyShowIn=GNOME;Unity;
 X-GNOME-Bugzilla-Bugzilla=GNOME
 X-GNOME-Bugzilla-Product=gnome-control-center
 X-GNOME-Bugzilla-Component=info
-X-GNOME-Bugzilla-Version=3.16.3
+X-GNOME-Bugzilla-Version=3.18.2
 # Translators: those are keywords for the System Information panel
 # "Preferred Applications" is the old name for the preference, so make
 # sure that you use the same "translation" for those keywords
@@ -152,7 +153,7 @@ Keywords[pa]=device;system;information;memory;processor;version;default;applicat
 Keywords[pl]=urządzenie;system;informacje;pamięć;procesor;grafika;karta;graficzna;wersja;domyślne;programy;aplikacje;preferowane;cd;dvd;usb;dźwięk;audio;wideo;video;płyta;dysk;wymienny;nośnik;automatyczne;uruchamianie;szczegóły;
 Keywords[pt]=dispositivo;sistema;informação;memória;processador;versão;omissão;aplicação;preferido;cd;dvd;usb;áudio;vídeo;disco;removível;media;autoiniciar;
 Keywords[pt_BR]=dispositivo;sistema;informação;memória;processador;versão;padrão;aplicativo;reserva;preferido;cd;dvd;usb;áudio;vídeo;unidade;removível;mídia;autorun;
-Keywords[ro]=device;system;information;memory;processor;version;default;application;preferred;cd;dvd;usb;audio;video;disc;removable;media;autorun;dispozitiv;sistem;informații;memorie;procesor;versiune;
+Keywords[ro]=device;system;information;memory;processor;version;default;application;preferred;cd;dvd;usb;audio;video;disc;removable;media;autorun;
 Keywords[ru]=устройство;система;информация;память;процессор;версия;умолчанию;приложение;альтернативный;предпочтительный;cd;dvd;usb;аудио;видео;диск;съёмный;съемный;носитель;автозапуск;
 Keywords[sk]=zariadenie;systém;informácie;pamäť;procesor;verzia;predvolené;aplikácia;uprednostňované;cd;dvd;usb;audio;video;disk;vymeniteľný;nosič;médium;médiá;spustenie;samospustenie;automatické;otvorenie;otváranie;
 Keywords[sl]=naprava;sistem;podrobnosti;pomnilnik;procesor;različica;privzeto;program;povrnjeno:prednostno;cd;dvd;usb;zvok;slika;video;disk;odstrani;predstavnost;samodejni zagon;
@@ -164,4 +165,4 @@ Keywords[tr]=aygıt;sistem;bilgi;bellek;işlemci;sürüm;öntanımlı;uygulama; 
 Keywords[uk]=пристрій;система;інформація;пам'ять;процесор;версія;типово;програма;бажане;cd;dvd;usb;аудіо;відео;диск;змінний;носій;автозапуск;
 Keywords[vi]=device;thiết;bị;thiet;bi;system;hệ;thống;he;thong;information;thông;tin;thong;memory;bộ;nhớ;bo;nho;processor;xử;lý;xu;ly;li;version;phiên;bản;phien;ban;default;mặc;định;mac;dinh;application;ứng;dụng;ung;dung;fallback;preferred;ưa;thích;ua;thich;cd;dvd;usb;audio;video;disc;đĩa;dia;removable;di;động;dong;media;autorun;tự;chạy;
 Keywords[zh_CN]=device;system;information;memory;processor;version;default;application;preferred;cd;dvd;usb;audio;video;disc;removable;media;autorun;设备;系统;信息;内存;处理器;CPU;版本;默认;应用程序;首选;回滚;喜好;音频;视频;光盘;光碟;盘片;可擦写;可移除;媒体;介质;自动运行;
-Keywords[zh_TW]=device;system;information;memory;processor;version;default;application;preferred;cd;dvd;usb;audio;video;disc;removable;media;autorun;裝置;系統;資訊;記憶體;處理器;版本;預設;應用程式;首選;音訊;視訊;光碟;可移除;媒體;自動執行;
+Keywords[zh_TW]=device;system;information;memory;processor;version;default;application;preferred;cd;dvd;usb;audio;video;disc;removable;media;autorun;裝置;系統;資訊;記憶體;處理器;版本;預設;應用程式;首選;音訊;視訊;碟片;可移除;媒體;自動執行;

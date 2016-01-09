@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Terminology (Zsh)
+Exec=terminology -e "/bin/zsh"
+Icon=terminology
+Type=Application
+Categories=System;TerminalEmulator;

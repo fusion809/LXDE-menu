@@ -219,7 +219,7 @@ Comment[kn]=ಕಡತಗಳನ್ನು ನಿಲುಕಿಸಿಕೊಳ್ಳ�
 Comment[ko]=파일 접근 및 정리
 Comment[ku]=Access and organize files
 Comment[li]=Access and organize files
-Comment[lt]=
+Comment[lt]= 
 Comment[lv]=Piekļūt un organizēt failus
 Comment[mai]=Access and organize files
 Comment[mg]=Access and organize files
@@ -280,9 +280,11 @@ Icon=folder
 Terminal=false
 Type=Application
 StartupNotify=false
-Categories=GNOME;GTK;Utility;Core;FileManager;
+Categories=GNOME;GTK;Utility;Core;
 MimeType=inode/directory;application/x-gnome-saved-search;
 X-GNOME-Bugzilla-Bugzilla=GNOME
 X-GNOME-Bugzilla-Product=nemo
 X-GNOME-Bugzilla-Component=general
-X-GNOME-Bugzilla-Version=2.6.7
+X-GNOME-Bugzilla-Version=2.8.4
+
+
