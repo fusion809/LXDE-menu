@@ -1,0 +1,20 @@
+[Desktop Entry]
+Name=Graphics
+Name[bn_IN]=গ্রাফিক্স
+Name[de]=Grafik
+Name[fa]=گرافیک
+Name[fi]=Grafiikka
+Name[gv]=Graafaghyn
+Name[ha]=Zane-Zane
+Name[hi]=चित्रादि
+Name[nl]=Grafisch
+Name[pt_BR]=Gráficos
+Name[te]=రేఖాచిత్రాలు
+Comment=Graphics applications
+Comment[ca]=Aplicacions de gràfics
+Comment[gn]=Baemo Ra'angaa Jajapoa Oia
+Comment[km]=កម្មវិធី​ក្រាហ្វិក
+Comment[mr]=चित्र-विज्ञान उपकरणं
+Comment[uz@cyrillic]=Тасвирий дастурлар
+Icon=applications-graphics
+Type=Directory

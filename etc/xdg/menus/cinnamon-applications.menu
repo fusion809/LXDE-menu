@@ -1,10 +1,10 @@
-<!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN"
- "http://www.freedesktop.org/standards/menu-spec/1.0/menu.dtd">
+<!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.1//EN"
+ "http://www.freedesktop.org/standards/menu-spec/1.1/menu.dtd">
 
 <Menu>
 
 	<Name>Applications</Name>
-	<Directory>xfce-menu-applications.directory</Directory>
+	<Directory>cinnamon-menu-applications.directory</Directory>
 
 	<!-- Read standard .directory and .desktop file locations -->
 	<DefaultAppDirs/>
@@ -16,16 +16,21 @@
 	<!-- Accessories submenu -->
 	<Menu>
 		<Name>Accessories</Name>
-		<Directory>xfce-accessories.directory</Directory>
+		<Directory>cinnamon-utility.directory</Directory>
 		<Include>
+      <Or>
+        <Category>Utility</Category>
+        <Category>Accessibility</Category>
+      </Or>
 			<And>
-				<Category>Utility</Category>
 				<Not>
-          <Category>Accessibility</Category>
+          <Category>AudioVideo</Category>
           <Category>Calculator</Category>
           <Category>Development</Category>
+          <Category>Game</Category>
           <Category>Graphics</Category>
           <Category>Screenshooter</Category>
+          <Category>Settings</Category>
           <Category>System</Category>
           <Category>TextEditor</Category>
           <Category>FileManager</Category>
@@ -36,59 +41,30 @@
 		</Include>
 	</Menu> <!-- End Accessories -->
 
-	<!-- Accessibility submenu -->
-	<Menu>
-		<Name>Universal Access</Name>
-		<Directory>xfce-utility-accessibility.directory</Directory>
-		<Include>
-			<And>
-				<Category>Accessibility</Category>
-				<Not>
-          <Category>Settings</Category>
-        </Not>
-			</And>
-		</Include>
-	</Menu> <!-- End Accessibility -->
-
 	<!-- Development Tools -->
 	<Menu>
 		<Name>Development</Name>
-		<Directory>xfce-development.directory</Directory>
+		<Directory>cinnamon-development.directory</Directory>
 		<Include>
 			<And>
 				<Category>Development</Category>
         <Not>
           <Category>TextEditor</Category>
           <Category>IDE</Category>
-          <Category>Qt</Category>
           <Filename>netbeans.desktop</Filename>
           <Filename>ninja-ide.desktop</Filename>
+          <Category>Python</Category>
+          <Category>Science</Category>
         </Not>
 			</And>
 			<Filename>emacs.desktop</Filename>
 		</Include>
 	</Menu> <!-- End Development Tools -->
 
-  <!-- Qt development-->
-  <Menu>
-    <Name>Qt</Name>
-    <Directory>xfce-qt.directory</Directory>
-    <Include>
-      <And>
-        <Category>Development</Category>
-        <Category>Qt</Category>
-        <Not>
-          <Category>Python</Category>
-          <Category>Science</Category>
-        </Not>
-      </And>
-    </Include>
-  </Menu>
-
 	<!-- Education -->
 	<Menu>
 		<Name>Education</Name>
-		<Directory>xfce-education.directory</Directory>
+		<Directory>cinnamon-education.directory</Directory>
 		<Include>
 			<Or>
         <Category>Calculator</Category>
@@ -115,7 +91,7 @@
 	<!-- Games -->
 	<Menu>
 		<Name>Games</Name>
-		<Directory>xfce-game.directory</Directory>
+		<Directory>cinnamon-game.directory</Directory>
 		<Include>
 			<And>
 				<Category>Game</Category>
@@ -149,7 +125,7 @@
 	<!-- Internet -->
 	<Menu>
 		<Name>Internet</Name>
-		<Directory>xfce-network.directory</Directory>
+		<Directory>cinnamon-network.directory</Directory>
 		<Include>
 			<And>
 				<Category>Network</Category>
@@ -160,18 +136,10 @@
 		</Include>
 	</Menu>	 <!-- End Internet -->
 
-  <Menu>
-    <Name>P2P Filetransfer</Name>
-    <Directory>xfce-p2p.directory</Directory>
-    <Include>
-      <Category>P2P</Category>
-    </Include>
-  </Menu>
-
 	<!-- Multimedia -->
 	<Menu>
 		<Name>Multimedia</Name>
-		<Directory>xfce-multimedia.directory</Directory>
+		<Directory>cinnamon-audio-video.directory</Directory>
 		<Include>
 			<And>
 				<Category>AudioVideo</Category>
@@ -248,9 +216,10 @@
     <Name>Virtualization Software</Name>
     <Directory>xfce-virtualization.directory</Directory>
     <Include>
-      <And>
+      <Or>
         <Category>Virtualization</Category>
-      </And>
+        <Filename>virtualbox.desktop</Filename>
+      </Or>
     </Include>
   </Menu>
 
