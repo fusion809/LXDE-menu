@@ -39,7 +39,7 @@
 	<!-- Accessibility submenu -->
 	<Menu>
 		<Name>Universal Access</Name>
-		<Directory>xfce-utility-accessibility.directory</Directory>
+		<Directory>lxde-utility-accessibility.directory</Directory>
 		<Include>
 			<And>
 				<Category>Accessibility</Category>
@@ -115,7 +115,7 @@
 	<!-- Games -->
 	<Menu>
 		<Name>Games</Name>
-		<Directory>xfce-game.directory</Directory>
+		<Directory>xfce-games.directory</Directory>
 		<Include>
 			<And>
 				<Category>Game</Category>
@@ -248,9 +248,10 @@
     <Name>Virtualization Software</Name>
     <Directory>xfce-virtualization.directory</Directory>
     <Include>
-      <And>
+      <Or>
         <Category>Virtualization</Category>
-      </And>
+        <Filename>virtualbox.desktop</Filename>
+      </Or>
     </Include>
   </Menu>
 

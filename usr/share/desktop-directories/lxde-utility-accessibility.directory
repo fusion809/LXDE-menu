@@ -106,4 +106,4 @@ Comment[vi]=Thiết lập Truy cập Hoàn toàn
 Comment[zh_CN]=通用访问设置
 Comment[zh_TW]=無障礙功能設定值
 Type=Directory
-Icon=preferences-desktop-accessibility
+Icon=/usr/share/icons/Menda-Circle/apps/scalable/preferences-desktop-accessibility.svg

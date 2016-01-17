@@ -1,6 +1,5 @@
 [Desktop Entry]
 Name=IDEs
-GenericName=Integrated Development Environments
 Comment=Integrated Development Environments
-Icon=redhat-programming
+Icon=/usr/share/icons/Menda-Circle/categories/256x256/redhat-programming.svg
 Type=Directory
