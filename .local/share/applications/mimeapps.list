@@ -1,0 +1,24 @@
+[Added Associations]
+application/vnd.rn-realmedia=vlc.desktop;org.gnome.Totem.desktop;mplayer.desktop;
+text/markdown=atom.desktop;org.gnome.Builder.desktop;org.kde.kate.desktop;org.kde.kwrite.desktop;libreoffice-writer.desktop;kde4-okularApplication_txt.desktop;org.gnome.gedit.desktop;pluma.desktop;mousepad.desktop;gvim.desktop;
+video/mp4=vlc.desktop;mplayer.desktop;org.kde.dragonplayer.desktop;org.gnome.Totem.desktop;
+video/webm=vlc.desktop;rage.desktop;org.gnome.Totem.desktop;org.kde.dragonplayer.desktop;
+video/x-flv=vlc.desktop;org.kde.dragonplayer.desktop;rage.desktop;org.gnome.Totem.desktop;mplayer.desktop;
+video/x-matroska=vlc.desktop;mplayer.desktop;org.kde.dragonplayer.desktop;org.gnome.Totem.desktop;
+
+[Default Applications]
+application/vnd.rn-realmedia=vlc.desktop;
+text/html=google-chrome.desktop
+text/markdown=atom.desktop;
+video/mp4=vlc.desktop;
+video/webm=vlc.desktop;
+video/x-flv=vlc.desktop;
+video/x-matroska=vlc.desktop;
+x-scheme-handler/about=google-chrome.desktop
+x-scheme-handler/http=google-chrome.desktop
+x-scheme-handler/https=google-chrome.desktop
+x-scheme-handler/irc=org.kde.konversation.desktop
+x-scheme-handler/ircs=org.kde.konversation.desktop
+x-scheme-handler/jagex-jav=runescape.desktop
+x-scheme-handler/unknown=google-chrome.desktop
+x-scheme-handler/x-bittorrent=qbittorrent.desktop

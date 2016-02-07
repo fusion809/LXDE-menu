@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Name=PC-BSD 10.2
+Comment=Starts the VirtualBox machine PC-BSD 10.2
+Type=Application
+Exec=/usr/lib/virtualbox/VirtualBox --comment "PC-BSD 10.2" --startvm "6548f870-24e5-4376-bf80-2c4f7a8ab94b"
+Icon=/home/fusion809/.local/share/icons/PC-BSD.png
+Categories=System;Emulation;Virtualization;

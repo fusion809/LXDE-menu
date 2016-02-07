@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Name=Trisquel 7
+Comment=Starts the VirtualBox machine Trisquel 7
+Type=Application
+Exec=/usr/lib/virtualbox/VirtualBox --comment "Trisquel 7" --startvm "d1f868ad-41f5-45fa-8e71-f659358b6f47"
+Icon=Trisquel.png
+Categories=System;Emulation;Virtualization;

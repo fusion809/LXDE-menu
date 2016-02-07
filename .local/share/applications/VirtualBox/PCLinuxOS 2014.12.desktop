@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Name=PCLinuxOS 2014.12
+Comment=Starts the VirtualBox machine PCLinuxOS 2014.12
+Type=Application
+Exec=/usr/lib/virtualbox/VirtualBox --comment "PCLinuxOS 2014.12" --startvm "b3e5640a-831b-4118-b018-6ba6a3160f66"
+Icon=PCLinuxOS.png
+Categories=System;Emulation;Virtualization;

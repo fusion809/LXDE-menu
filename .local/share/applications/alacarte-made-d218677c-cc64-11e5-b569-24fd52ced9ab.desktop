@@ -1,0 +1,7 @@
+[Desktop Entry]
+Comment=
+Terminal=false
+Name=Edit The Hornery in Atom
+Exec=atom /home/fusion809/GitHub/fusion809.github.io
+Type=Application
+Icon=/usr/share/pixmaps/atom.png

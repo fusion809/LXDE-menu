@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Name=openSUSE 42.1
+Comment=Starts the VirtualBox machine openSUSE 42.1
+Type=Application
+Exec=/usr/lib/virtualbox/VirtualBox --comment "openSUSE 42.1" --startvm "5a929972-2a66-49af-9b01-a2c5d1c9e44b"
+Icon=openSUSE.png
+Categories=System;Emulation;Virtualization;

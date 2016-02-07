@@ -1,300 +1,163 @@
 <!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN"
- "http://www.freedesktop.org/standards/menu-spec/1.0/menu.dtd">
+  "http://www.freedesktop.org/standards/menu-spec/1.0/menu.dtd">
 
 <Menu>
+    <Name>Xfce</Name>
 
-	<Name>Applications</Name>
-	<Directory>xfce-menu-applications.directory</Directory>
+    <DefaultAppDirs/>
+    <DefaultDirectoryDirs/>
+    <DefaultMergeDirs/>
 
-	<!-- Read standard .directory and .desktop file locations -->
-	<DefaultAppDirs/>
-	<DefaultDirectoryDirs/>
-
-	<!-- Read in overrides and child menus from applications-merged/ -->
-	<DefaultMergeDirs/>
-
-	<!-- Accessories submenu -->
-	<Menu>
-		<Name>Accessories</Name>
-		<Directory>xfce-accessories.directory</Directory>
-		<Include>
-			<And>
-				<Category>Utility</Category>
-				<Not>
-          <Category>Accessibility</Category>
-          <Category>Calculator</Category>
-          <Category>Development</Category>
-          <Category>Graphics</Category>
-          <Category>Screenshooter</Category>
-          <Category>System</Category>
-          <Category>TextEditor</Category>
-          <Category>FileManager</Category>
-          <Category>TerminalEmulator</Category>
-          <Filename>nemo.desktop</Filename>
-        </Not>
-			</And>
-		</Include>
-	</Menu> <!-- End Accessories -->
-
-	<!-- Accessibility submenu -->
-	<Menu>
-		<Name>Universal Access</Name>
-		<Directory>lxde-utility-accessibility.directory</Directory>
-		<Include>
-			<And>
-				<Category>Accessibility</Category>
-				<Not>
-          <Category>Settings</Category>
-        </Not>
-			</And>
-		</Include>
-	</Menu> <!-- End Accessibility -->
-
-	<!-- Development Tools -->
-	<Menu>
-		<Name>Development</Name>
-		<Directory>xfce-development.directory</Directory>
-		<Include>
-			<And>
-				<Category>Development</Category>
-        <Not>
-          <Category>TextEditor</Category>
-          <Category>IDE</Category>
-          <Category>Qt</Category>
-          <Filename>netbeans.desktop</Filename>
-          <Filename>ninja-ide.desktop</Filename>
-        </Not>
-			</And>
-			<Filename>emacs.desktop</Filename>
-		</Include>
-	</Menu> <!-- End Development Tools -->
-
-  <!-- Qt development-->
-  <Menu>
-    <Name>Qt</Name>
-    <Directory>xfce-qt.directory</Directory>
     <Include>
-      <And>
-        <Category>Development</Category>
-        <Category>Qt</Category>
-        <Not>
-          <Category>Python</Category>
-          <Category>Science</Category>
-        </Not>
-      </And>
+        <Category>X-Xfce-Toplevel</Category>
     </Include>
-  </Menu>
 
-	<!-- Education -->
-	<Menu>
-		<Name>Education</Name>
-		<Directory>xfce-education.directory</Directory>
-		<Include>
-			<Or>
-        <Category>Calculator</Category>
-				<Category>Education</Category>
-        <Category>Science</Category>
-        <Category>Math</Category>
-        <Category>Physics</Category>
-			</Or>
-		</Include>
-	</Menu> <!-- End Education -->
+    <Layout>
+        <Filename>xfce4-run.desktop</Filename>
+        <Separator/>
+        <Filename>exo-terminal-emulator.desktop</Filename>
+        <Filename>exo-file-manager.desktop</Filename>
+        <Filename>exo-mail-reader.desktop</Filename>
+        <Filename>exo-web-browser.desktop</Filename>
+        <Separator/>
+        <Menuname>Settings</Menuname>
+        <Separator/>
+        <Merge type="all"/>
+        <Separator/>
+        <Filename>xfce4-about.desktop</Filename>
+        <Filename>xfce4-session-logout.desktop</Filename>
+    </Layout>
 
-  <!-- File Managers-->
-  <Menu>
-    <Name>File Managers</Name>
-    <Directory>lxde-filemanager.directory</Directory>
-    <Include>
-      <And>
-        <Category>FileManager</Category>
-      </And>
-      <Filename>nemo.desktop</Filename>
-    </Include>
-  </Menu>
+    <Menu>
+        <Name>Settings</Name>
+        <Directory>xfce-settings.directory</Directory>
+        <Include>
+            <Category>Settings</Category>
+        </Include>
 
-	<!-- Games -->
-	<Menu>
-		<Name>Games</Name>
-		<Directory>xfce-games.directory</Directory>
-		<Include>
-			<And>
-				<Category>Game</Category>
-			</And>
-		</Include>
-	</Menu> <!-- End Games -->
+        <Layout>
+            <Filename>xfce-settings-manager.desktop</Filename>
+            <Separator/>
+            <Merge type="all"/>
+        </Layout>
 
-	<!-- Graphics -->
-	<Menu>
-		<Name>Graphics</Name>
-		<Directory>xfce-graphics.directory</Directory>
-		<Include>
-			<And>
-				<Category>Graphics</Category>
-			</And>
-		</Include>
-	</Menu> <!-- End Graphics -->
+        <Menu>
+            <Name>Screensavers</Name>
+            <Directory>xfce-screensavers.directory</Directory>
+            <Include>
+                <Category>Screensaver</Category>
+            </Include>
+        </Menu>
+    </Menu>
 
-  <Menu>
-    <Name>Integrated Development Environments</Name>
-    <Directory>xfce-ide.directory</Directory>
-    <Include>
-      <And>
-        <Category>IDE</Category>
-      </And>
-      <Filename>netbeans.desktop</Filename>
-      <Filename>ninja-ide.desktop</Filename>
-    </Include>
-  </Menu>
+    <Menu>
+        <Name>Accessories</Name>
+        <Directory>xfce-accessories.directory</Directory>
+        <Include>
+            <Or>
+                <Category>Accessibility</Category>
+                <Category>Core</Category>
+                <Category>Legacy</Category>
+                <Category>Utility</Category>
+            </Or>
+        </Include>
+        <Exclude>
+            <Or>
+                <Filename>exo-file-manager.desktop</Filename>
+                <Filename>exo-terminal-emulator.desktop</Filename>
+                <Filename>xfce4-about.desktop</Filename>
+                <Filename>xfce4-run.desktop</Filename>
+            </Or>
+        </Exclude>
+    </Menu>
 
-	<!-- Internet -->
-	<Menu>
-		<Name>Internet</Name>
-		<Directory>xfce-network.directory</Directory>
-		<Include>
-			<And>
-				<Category>Network</Category>
-        <Not>
-          <Category>P2P</Category>
-        </Not>
-			</And>
-		</Include>
-	</Menu>	 <!-- End Internet -->
+    <Menu>
+        <Name>Development</Name>
+        <Directory>xfce-development.directory</Directory>
+        <Include>
+            <Category>Development</Category>
+        </Include>
+    </Menu>
 
-  <Menu>
-    <Name>P2P Filetransfer</Name>
-    <Directory>xfce-p2p.directory</Directory>
-    <Include>
-      <Category>P2P</Category>
-    </Include>
-  </Menu>
+    <Menu>
+        <Name>Education</Name>
+        <Directory>xfce-education.directory</Directory>
+        <Include>
+            <Category>Education</Category>
+        </Include>
+    </Menu>
 
-	<!-- Multimedia -->
-	<Menu>
-		<Name>Multimedia</Name>
-		<Directory>xfce-multimedia.directory</Directory>
-		<Include>
-			<And>
-				<Category>AudioVideo</Category>
-			</And>
-		</Include>
-	</Menu>	 <!-- End Multimedia -->
+    <Menu>
+        <Name>Games</Name>
+        <Directory>xfce-games.directory</Directory>
+        <Include>
+            <Category>Game</Category>
+        </Include>
+    </Menu>
 
-	<!-- Office -->
-	<Menu>
-		<Name>Office</Name>
-		<Directory>xfce-office.directory</Directory>
-		<Include>
-			<And>
-				<Category>Office</Category>
-			</And>
-		</Include>
-	</Menu> <!-- End Office -->
+    <Menu>
+        <Name>Graphics</Name>
+        <Directory>xfce-graphics.directory</Directory>
+        <Include>
+            <Category>Graphics</Category>
+        </Include>
+    </Menu>
 
-  <!-- Terminal Emulators-->
-  <Menu>
-    <Name>Terminal Emulators</Name>
-    <Directory>lxde-terminalemulator.directory</Directory>
-    <Include>
-      <And>
-        <Category>TerminalEmulator</Category>
-      </And>
-    </Include>
-  </Menu>
+    <Menu>
+        <Name>Multimedia</Name>
+        <Directory>xfce-multimedia.directory</Directory>
+        <Include>
+            <Category>Audio</Category>
+            <Category>Video</Category>
+            <Category>AudioVideo</Category>
+        </Include>
+    </Menu>
 
-  <!-- Sabayon Weblinks-->
-  <!-- This currently doesn't work-->
-  <Menu>
-    <Name>Sabayon Weblinks</Name>
-    <Directory>sabayon-sabayon.directory</Directory>
-    <Include>
-      <And>
-        <Category>Sabayon</Category>
-      </And>
-    </Include>
-  </Menu>
+    <Menu>
+        <Name>Network</Name>
+        <Directory>xfce-network.directory</Directory>
+        <Include>
+            <Category>Network</Category>
+        </Include>
+        <Exclude>
+            <Or>
+                <Filename>exo-mail-reader.desktop</Filename>
+                <Filename>exo-web-browser.desktop</Filename>
+            </Or>
+        </Exclude>
+    </Menu>
 
-  <!-- Text Editors-->
-  <Menu>
-    <Name>Text Editors</Name>
-    <Directory>xfce-texteditor.directory</Directory>
-    <Include>
-      <And>
-        <Category>TextEditor</Category>
-      </And>
-    </Include>
-  </Menu>
+    <Menu>
+        <Name>Office</Name>
+        <Directory>xfce-office.directory</Directory>
+        <Include>
+            <Category>Office</Category>
+        </Include>
+    </Menu>
 
-	<!-- System Tools-->
-	<Menu>
-		<Name>System</Name>
-		<Directory>xfce-system.directory</Directory>
-		<Include>
-			<And>
-				<Category>System</Category>
-				<Not>
-          <Category>Settings</Category>
-          <Category>PackageManager</Category>
-          <Category>Virtualization</Category>
-          <Category>FileManager</Category>
-          <Category>TerminalEmulator</Category>
-          <Filename>virtualbox.desktop</Filename>
-        </Not>
-			</And>
-		</Include>
-	</Menu>	 <!-- End System Tools -->
+    <Menu>
+        <Name>System</Name>
+        <Directory>xfce-system.directory</Directory>
+        <Include>
+            <Or>
+                <Category>Emulator</Category>
+                <Category>System</Category>
+            </Or>
+        </Include>
+        <Exclude>
+            <Or>
+                <Filename>xfce4-session-logout.desktop</Filename>
+            </Or>
+        </Exclude>
+    </Menu>
 
-  <!-- Virtualization Software-->
-  <Menu>
-    <Name>Virtualization Software</Name>
-    <Directory>xfce-virtualization.directory</Directory>
-    <Include>
-      <Or>
-        <Category>Virtualization</Category>
-        <Filename>virtualbox.desktop</Filename>
-      </Or>
-    </Include>
-  </Menu>
+    <Menu>
+        <Name>Other</Name>
+        <Directory>xfce-other.directory</Directory>
+        <OnlyUnallocated/>
+        <Include>
+            <All/>
+        </Include>
+    </Menu>
 
-	<!-- Other -->
-	<Menu>
-		<Name>Other</Name>
-		<Directory>xfce-other.directory</Directory>
-		<OnlyUnallocated/>
-		<Include>
-			<And>
-				<Not>
-          <Category>Core</Category>
-          <Category>Settings</Category>
-          <Category>Screensaver</Category>
-          <Category>Sabayon</Category>
-        </Not>
-			</And>
-		</Include>
-		</Menu> <!-- End Other -->
-
-	<Menu>
-		<Name>DesktopSettings</Name>
-		<Directory>xfce-settings.directory</Directory>
-		<OnlyUnallocated/>
-		<Include>
-			<Or>
-				<Category>Settings</Category>
-				<Category>PackageManager</Category>
-				<Category>System</Category>
-			</Or>
-		</Include>
-		<Layout>
-			<Merge type="menus"/>
-			<Merge type="files"/>
-		</Layout>
-
-	</Menu> <!-- End Settings -->
-
-	<Layout>
-		<Merge type="files"/>
-		<Merge type="menus"/>
-		<Separator/>
-		<Menuname>DesktopSettings</Menuname>
-	</Layout>
-
-</Menu> <!-- End Applications -->
+</Menu>

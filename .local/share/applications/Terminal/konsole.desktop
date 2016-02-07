@@ -1,0 +1,18 @@
+[Desktop Entry]
+Name=Konsole (Zsh)
+GenericName=Terminal (Zsh)
+Type=Application
+TryExec=/usr/bin/konsole -e "/bin/zsh"
+Exec=konsole2
+Icon=utilities-terminal
+Terminal=false
+Categories=Qt;KDE;System;TerminalEmulator;Zsh;
+Actions=NewWindow;
+X-DocPath=konsole/index.html
+X-DBUS-StartupType=Unique
+StartupNotify=true
+X-KDE-AuthorizeAction=shell_access
+
+[Desktop Action NewWindow]
+Name=Open a New Window (Zsh)
+Exec=konsole -e "/bin/zsh"

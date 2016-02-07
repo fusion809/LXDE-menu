@@ -1,0 +1,22 @@
+[Desktop Entry]
+Categories=GNOME;GTK;System;TerminalEmulator;
+Comment=Use the command line
+Exec=gnome-terminal
+Icon=utilities-terminal
+Keywords=shell;prompt;command;commandline;cmd;
+Name=GNOME Terminal
+NoDisplay=false
+Path[$e]=
+StartupNotify=true
+Terminal=0
+TerminalOptions=
+TryExec=gnome-terminal
+Type=Application
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Component=BugBuddyBugs
+X-GNOME-Bugzilla-Product=gnome-terminal
+X-GNOME-Bugzilla-Version=3.18.2
+X-GNOME-DocPath=gnome-terminal/index.html
+X-GNOME-SingleWindow=false
+X-KDE-SubstituteUID=false
+X-KDE-Username=

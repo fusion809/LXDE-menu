@@ -1,0 +1,16 @@
+[Desktop Entry]
+Categories=GTK;System;Monitor;
+Comment=Manage running processes
+Exec=lxtask
+GenericName=Process manager
+Icon=utilities-system-monitor
+Keywords=task;kill;suspend;processor;memory;monitoring;performance;
+Name=LXTask
+NoDisplay=false
+Path[$e]=
+StartupNotify=true
+Terminal=0
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=

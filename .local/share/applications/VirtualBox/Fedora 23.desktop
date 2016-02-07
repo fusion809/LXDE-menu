@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Name=Fedora 23
+Comment=Starts the VirtualBox machine Fedora 23
+Type=Application
+Exec=/usr/lib/virtualbox/VirtualBox --comment "Fedora 23" --startvm "2b30e61a-5b33-403b-a52d-1d3679043f8a"
+Icon=/home/fusion809/.local/share/icons/Fedora.png
+Categories=System;Emulation;Virtualization;
