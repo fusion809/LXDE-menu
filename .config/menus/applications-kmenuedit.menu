@@ -74,7 +74,6 @@
  <!-- Games -->
  <Menu>
   <Name>Games</Name>
-  <Directory>lxde-game.directory</Directory>
   <Include>
    <Category>Game</Category>
   </Include>
@@ -162,12 +161,35 @@
    </And>
   </Include>
   <Exclude>
-    <Category>GNOME</Category>
-    <Category>Viewer</Category>
-    <Filename>kmail_view.desktop</Filename>
-    <Filename>kmailservice5.desktop</Filename>
-    <Filename>org.kde.kmail.desktop</Filename>
-    <Filename>org.kde.headerthemeeditor.desktop</Filename>
+   <Category>GNOME</Category>
+   <Category>Viewer</Category>
+   <Filename>kmail_view.desktop</Filename>
+   <Filename>kmailservice5.desktop</Filename>
+   <Filename>org.kde.kmail.desktop</Filename>
+   <Filename>org.kde.headerthemeeditor.desktop</Filename>
+   <Filename>libreoffice-base.desktop</Filename>
+   <Filename>libreoffice-calc.desktop</Filename>
+   <Filename>libreoffice-draw.desktop</Filename>
+   <Filename>libreoffice-impress.desktop</Filename>
+   <Filename>libreoffice-math.desktop</Filename>
+   <Filename>libreoffice-startcenter.desktop</Filename>
+   <Filename>libreoffice-writer.desktop</Filename>
+   <Filename>libreoffice-xsltfilter.desktop</Filename>
+  </Exclude>
+  <Menu>
+   <Name>Document Viewers</Name>
+   <Directory>Document_Viewers.directory</Directory>
+   <Include>
+    <And>
+     <Category>Viewer</Category>
+     <Category>Office</Category>
+    </And>
+   </Include>
+  </Menu>
+  <Menu>
+   <Name>LibreOffice</Name>
+   <Directory>LibreOffice.directory</Directory>
+   <Include>
     <Filename>libreoffice-base.desktop</Filename>
     <Filename>libreoffice-calc.desktop</Filename>
     <Filename>libreoffice-draw.desktop</Filename>
@@ -176,29 +198,6 @@
     <Filename>libreoffice-startcenter.desktop</Filename>
     <Filename>libreoffice-writer.desktop</Filename>
     <Filename>libreoffice-xsltfilter.desktop</Filename>
-  </Exclude>
-  <Menu>
-   <Name>Document Viewers</Name>
-   <Directory>Document_Viewers.directory</Directory>
-   <Include>
-     <And>
-       <Category>Viewer</Category>
-       <Category>Office</Category>
-     </And>
-   </Include>
-  </Menu>
-  <Menu>
-   <Name>LibreOffice</Name>
-   <Directory>LibreOffice.directory</Directory>
-   <Include>
-       <Filename>libreoffice-base.desktop</Filename>
-       <Filename>libreoffice-calc.desktop</Filename>
-       <Filename>libreoffice-draw.desktop</Filename>
-       <Filename>libreoffice-impress.desktop</Filename>
-       <Filename>libreoffice-math.desktop</Filename>
-       <Filename>libreoffice-startcenter.desktop</Filename>
-       <Filename>libreoffice-writer.desktop</Filename>
-       <Filename>libreoffice-xsltfilter.desktop</Filename>
    </Include>
   </Menu>
  </Menu>
@@ -300,6 +299,7 @@
    <Filename>Arch-Schwag.desktop</Filename>
    <Filename>Arch-Wiki.desktop</Filename>
   </Include>
+  <Deleted/>
  </Menu>
  <Menu>
   <Name>.hidden</Name>
@@ -308,30 +308,6 @@
    <Filename>sage-notebook.desktop</Filename>
   </Include>
  </Menu>
- <Layout>
-  <Merge type="menus"/>
-  <Menuname>Arch Linux</Menuname>
-  <Menuname>Atom</Menuname>
-  <Menuname>Development</Menuname>
-  <Menuname>Education</Menuname>
-  <Menuname>File Managers</Menuname>
-  <Menuname>Games</Menuname>
-  <Menuname>Graphics</Menuname>
-  <Menuname>gVim</Menuname>
-  <Menuname>Internet</Menuname>
-  <Menuname>Multimedia</Menuname>
-  <Menuname>Office</Menuname>
-  <Menuname>Settingsmenu</Menuname>
-  <Menuname>System</Menuname>
-  <Menuname>Terminal Emulators</Menuname>
-  <Menuname>Text Editors</Menuname>
-  <Menuname>Universal Access</Menuname>
-  <Menuname>Utilities</Menuname>
-  <Menuname>Virtualization Software</Menuname>
-  <Merge type="files"/>
-  <Filename>kde4-kfind.desktop</Filename>
-  <Filename>org.kde.Help.desktop</Filename>
- </Layout>
  <Menu>
   <Name>Applications</Name>
   <Exclude>
@@ -348,5 +324,26 @@
   </Exclude>
   <Deleted/>
  </Menu>
+ <Layout>
+  <Merge type="menus"/>
+  <Menuname>Atom</Menuname>
+  <Menuname>Development</Menuname>
+  <Menuname>Education</Menuname>
+  <Menuname>File Managers</Menuname>
+  <Menuname>Games</Menuname>
+  <Menuname>Graphics</Menuname>
+  <Menuname>gVim</Menuname>
+  <Menuname>Internet</Menuname>
+  <Menuname>Multimedia</Menuname>
+  <Menuname>Office</Menuname>
+  <Menuname>Settingsmenu</Menuname>
+  <Menuname>System</Menuname>
+  <Menuname>Terminal Emulators</Menuname>
+  <Menuname>Text Editors</Menuname>
+  <Menuname>Utilities</Menuname>
+  <Menuname>Virtualization Software</Menuname>
+  <Merge type="files"/>
+  <Filename>kde4-Help.desktop</Filename>
+ </Layout>
 </Menu>
 <!-- End Applications -->

@@ -1,19 +1,23 @@
 [Added Associations]
-application/vnd.rn-realmedia=vlc.desktop;org.gnome.Totem.desktop;mplayer.desktop;
+application/vnd.rn-realmedia=vlc.desktop;mplayer.desktop;rage.desktop;
 text/markdown=atom.desktop;org.gnome.Builder.desktop;org.kde.kate.desktop;org.kde.kwrite.desktop;libreoffice-writer.desktop;kde4-okularApplication_txt.desktop;org.gnome.gedit.desktop;pluma.desktop;mousepad.desktop;gvim.desktop;
+text/x-rpm-spec=atom.desktop;org.kde.kwrite.desktop;writer.desktop;kde4-okularApplication_txt.desktop;gVim-gvim.desktop;org.gnome.gedit.desktop;gvim.desktop;
 video/mp4=vlc.desktop;mplayer.desktop;org.kde.dragonplayer.desktop;org.gnome.Totem.desktop;
 video/webm=vlc.desktop;rage.desktop;org.gnome.Totem.desktop;org.kde.dragonplayer.desktop;
 video/x-flv=vlc.desktop;org.kde.dragonplayer.desktop;rage.desktop;org.gnome.Totem.desktop;mplayer.desktop;
 video/x-matroska=vlc.desktop;mplayer.desktop;org.kde.dragonplayer.desktop;org.gnome.Totem.desktop;
+video/x-msvideo=vlc.desktop;org.kde.dragonplayer.desktop;rage.desktop;
 
 [Default Applications]
 application/vnd.rn-realmedia=vlc.desktop;
 text/html=google-chrome.desktop
 text/markdown=atom.desktop;
+text/x-rpm-spec=atom.desktop;
 video/mp4=vlc.desktop;
 video/webm=vlc.desktop;
 video/x-flv=vlc.desktop;
 video/x-matroska=vlc.desktop;
+video/x-msvideo=vlc.desktop;
 x-scheme-handler/about=google-chrome.desktop
 x-scheme-handler/http=google-chrome.desktop
 x-scheme-handler/https=google-chrome.desktop

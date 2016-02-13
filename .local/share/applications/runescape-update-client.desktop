@@ -1,0 +1,33 @@
+# HEADER! DO NOT REMOVE
+[Desktop Entry]
+Version=1.0
+
+# Application = GUI application, Terminal = Terminal application
+Type=Application
+
+# Name displayed in the menus and on shortcuts
+Name=Runescape Client Updater
+# Same as above but for KDE only
+GenericName=Runescape Client Updater
+
+# A hint about what the application is
+Comment=Update the runescape client
+
+# Which icon file to use
+Icon=/home/fusion809/runescape/share/img/update-runescape.png
+
+# Show terminal?
+Terminal=true
+
+# Executable binary file
+Exec=/home/fusion809/runescape/rsu/rsu-query rsu.download.client
+
+# Menu cathegory (GTK, Development, IDE, Office, Application,
+# AudioVideo, Audio, Video, AudioVideoEditing, GNOME, Utility, 
+# TextEditor, Graphics, 2DGraphics, RasterGraphics, Emulator, System,
+# Settings, DesktopSettings, Filesystem)
+Categories=GNOME;GTK;Game;
+
+# Display property
+NoDisplay=false
+

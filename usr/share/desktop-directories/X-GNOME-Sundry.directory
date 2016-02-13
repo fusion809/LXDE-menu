@@ -7,8 +7,11 @@ Name[as]=চানড্ৰাই
 Name[be]=Усякае
 Name[bg]=Разни
 Name[ca]=Diversos
+Name[ca@valencia]=Diversos
 Name[crh]=Müteferriqa
+Name[cs]=Různé
 Name[da]=Sundry
+Name[de]=Verschiedenes
 Name[el]=Διάφορα
 Name[eo]=Diversaj
 Name[es]=Varios
@@ -63,3 +66,4 @@ Name[zh_HK]=雜項
 Name[zh_TW]=雜項
 Icon=applications-other
 Type=Directory
+

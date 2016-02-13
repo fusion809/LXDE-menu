@@ -1,8 +1,8 @@
 [Desktop Entry]
 Comment=
-Exec=atom /home/fusion809/GitHub/PKGBUILDs/
+Exec=atom /home/makerpm/rpmbuild/
 Icon=atom
-Name=PKGBUILDs
+Name=RPM Build
 Categories=Atom;TextEditor;Development;
 NoDisplay=false
 Path[$e]=
