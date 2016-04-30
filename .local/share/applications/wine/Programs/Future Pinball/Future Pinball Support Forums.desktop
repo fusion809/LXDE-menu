@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Future Pinball Support Forums
+Exec=env WINEPREFIX="/home/fusion809/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/fusion809/.wine/dosdevices/c:/users/Public/Start\\ Menu/Programs/Future\\ Pinball/Future\\ Pinball\\ Support\\ Forums.lnk
+Type=Application
+StartupNotify=true
+Path=/home/fusion809/.wine/dosdevices/c:/Games/Future Pinball
+Icon=A301_Future Pinball Support Forum.0

@@ -2,6 +2,7 @@
 Categories=GTK;System;Monitor;
 Comment=Manage running processes
 Exec=lxtask
+GenericName[en_GB]=Process manager
 GenericName=Process manager
 Icon=utilities-system-monitor
 Keywords=task;kill;suspend;processor;memory;monitoring;performance;

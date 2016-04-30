@@ -1,0 +1,28 @@
+[Desktop Action new-window]
+Exec=nautilus --new-window
+Name=New Window
+
+[Desktop Entry]
+Actions=new-window;
+Categories=GNOME;GTK;Utility;Core;FileManager;
+Comment=Access and organise files
+DBusActivatable=true
+Exec=nautilus --new-window %U
+Icon=system-file-manager
+Keywords[en_GB]=folder;manager;explore;disk;filesystem;
+Keywords=folder;manager;explore;disk;filesystem;
+MimeType=inode/directory;application/x-gnome-saved-search;
+Name=Nautilus
+NoDisplay=false
+Path[$e]=
+StartupNotify=true
+Terminal=0
+TerminalOptions=
+Type=Application
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Component=general
+X-GNOME-Bugzilla-Product=nautilus
+X-GNOME-Bugzilla-Version=3.20.0
+X-GNOME-UsesNotifications=true
+X-KDE-SubstituteUID=false
+X-KDE-Username=

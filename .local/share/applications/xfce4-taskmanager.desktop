@@ -2,10 +2,10 @@
 Categories=System;Utility;
 Comment=Easy to use task manager
 Exec=xfce4-taskmanager
-GenericName[en_AU]=Task Manager
+GenericName[en_GB]=Task Manager
 GenericName=Task Manager
 Icon=utilities-system-monitor
-Name=Xfce4 Task Manager
+Name=Xfce Task Manager
 NoDisplay=false
 Path[$e]=
 StartupNotify=true

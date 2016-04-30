@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Future Pinball
+MimeType=application/x-wine-extension-fpt;
+Exec=env WINEPREFIX="/home/fusion809/.wine" wine start /ProgIDOpen Future\\ Pinball\\ Table %f
+NoDisplay=true
+StartupNotify=true
+Icon=3CA3_Future Pinball.0

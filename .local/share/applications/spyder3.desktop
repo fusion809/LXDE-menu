@@ -1,0 +1,18 @@
+[Desktop Entry]
+Categories=Development;Science;IDE;Qt;
+Comment=Scientific PYthon Development EnviRonment - Python3
+Exec=spyder3 %F
+GenericName=
+Icon=spyder3
+MimeType=text/x-python;
+Name=Spyder3
+NoDisplay=false
+Path[$e]=
+StartupNotify=true
+Terminal=0
+TerminalOptions=
+TryExec=spyder3
+Type=Application
+Version=1.0
+X-KDE-SubstituteUID=false
+X-KDE-Username=

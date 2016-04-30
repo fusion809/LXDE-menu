@@ -1,2 +1,5 @@
 [Default Applications]
-text/plain=komodo-edit-9.desktop
+application/vnd.google-earth.kml+xml=Google-googleearth.desktop
+application/vnd.google-earth.kmz=Google-googleearth.desktop
+application/earthviewer=Google-googleearth.desktop
+application/keyhole=Google-googleearth.desktop

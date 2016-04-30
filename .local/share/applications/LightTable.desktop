@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=LightTable
+Categories=Development;IDE;
+Type=Application
+Icon=/home/fusion809/GitHub/others/LightTable/builds/lighttable-0.8.1-linux/resources/app/core/img/lticon.png
+Exec=/home/fusion809/GitHub/others/LightTable/builds/lighttable-0.8.1-linux/LightTable

@@ -1,46 +1,29 @@
-# HEADER! DO NOT REMOVE
 [Desktop Entry]
-Version=1.0
-
-# Application = GUI application, Terminal = Terminal application
-Type=Application
-
-# Name displayed in the menus and on shortcuts
-Name=RuneScape
-# Same as above but for KDE only
-GenericName=RuneScape
-
-# A hint about what the application is
-Comment=The RuneScape Unix Client
-
-# Which icon file to use
-Icon=/home/fusion809/runescape/share/img/runescape.png
-
-# Show terminal?
-Terminal=false
-
-# Set mimetype
-MimeType=x-scheme-handler/jagex-jav;
-
-# Executable binary file
-Exec=/home/fusion809/runescape/runescape %U
-
-# Menu cathegory (GTK, Development, IDE, Office, Application,
-# AudioVideo, Audio, Video, AudioVideoEditing, GNOME, Utility, 
-# TextEditor, Graphics, 2DGraphics, RasterGraphics, Emulator, System,
-# Settings, DesktopSettings, Filesystem)
 Categories=GNOME;GTK;Game;
-
-# Unity only support
+Comment[en_GB]=The RuneScape Unix Client
+Comment=The RuneScape Unix Client
+Exec=/home/fusion809/runescape/runescape %U
+Icon=/opt/runescape/share/img/runescape.png
+MimeType=
+Name=RuneScape Unix Client
+NoDisplay=false
+Path[$e]=
+StartupNotify=true
+Terminal=0
+TerminalOptions=
+Type=Application
+Version=1.0
 X-Ayatana-Desktop-Shortcuts=Oldschool;UpdateClient;
-
-[UpdateClient Shortcut Group]
-Name=Update Runescape Client
-Exec=rsu/rsu-query rsu.download.client
-Terminal=true
-#TargetEnvironment=Unity
+X-DBUS-ServiceName=
+X-DBUS-StartupType=
+X-KDE-SubstituteUID=false
+X-KDE-Username=
 
 [Oldschool Shortcut Group]
-Name=OldSchool RuneScape
 Exec=runescape --prmfile=oldschool.prm
+Name=OldSchool RuneScape
 
+[UpdateClient Shortcut Group]
+Exec=rsu/rsu-query rsu.download.client
+Name=Update Runescape Client
+Terminal=true

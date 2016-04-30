@@ -1,0 +1,22 @@
+[Desktop Entry]
+Categories=Game;
+Comment[en_GB]=RuneScape - A Free MMORPG from Jagex Ltd.
+Comment=RuneScape - A Free MMORPG from Jagex Ltd.
+Exec=runescape-launcher
+GenericName[en_GB]=
+GenericName=
+Icon=runescape
+MimeType=
+Name[en_GB]=RuneScape Launcher
+Name=RuneScape Launcher
+NoDisplay=false
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+Version=1.0
+X-DBUS-ServiceName=
+X-DBUS-StartupType=
+X-KDE-SubstituteUID=false
+X-KDE-Username=

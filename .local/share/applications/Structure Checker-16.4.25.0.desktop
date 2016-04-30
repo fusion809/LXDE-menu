@@ -1,0 +1,7 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Type=Application
+Name=Structure Checker-16.4.25.0
+Exec=/bin/sh "/home/fusion809/ChemAxon/MarvinBeans/Structure Checker" 
+Icon=/home/fusion809/ChemAxon/MarvinBeans/.install4j/Structure Checker.png
+Categories=Education;Science;Chemistry;

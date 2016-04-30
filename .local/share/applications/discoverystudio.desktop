@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Discovery Studio Visualizer 2016
+Exec=/home/fusion809/BIOVIA/DiscoveryStudio2016/bin/DiscoveryStudio2016
+Type=Application
+Icon=/home/fusion809/BIOVIA/DiscoveryStudio2016/share/PluginDescriptors/Icons/Container/appicon.png
+Categories=Chemistry;Science;Education;
+MimeType=chemical/x-cif;chemical/x-cml;chemical/x-daylight-smiles;chemical/x-gamess-input;chemical/x-gamess-output;chemical/x-gaussian-log;chemical/x-mopac-out;chemical/x-pdb;chemical/x-xyz;chemical/x-gaussian-checkpoint;chemical/x-gaussian-cube;chemical/x-qchem-output;

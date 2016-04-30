@@ -1,193 +1,1104 @@
 <!DOCTYPE Menu PUBLIC '-//freedesktop//DTD Menu 1.0//EN' 'http://www.freedesktop.org/standards/menu-spec/1.0/menu.dtd'>
 <Menu>
- <Name>Applications</Name>
- <!-- Read standard .directory and .desktop file locations -->
- <DefaultAppDirs/>
- <DefaultDirectoryDirs/>
- <!-- Read in overrides and child menus from applications-merged/ -->
- <DefaultMergeDirs/>
  <Menu>
-  <Name>Atom</Name>
-  <Directory>Atom.directory</Directory>
+  <Name>Internet</Name>
+  <Menu>
+   <Name>Social</Name>
+   <Directory>Social.directory</Directory>
+   <Include>
+    <Filename>hexchat.desktop</Filename>
+    <Filename>org.kde.ktpcontactlist.desktop</Filename>
+    <Filename>org.kde.ktplogviewer.desktop</Filename>
+    <Filename>org.kde.headerthemeeditor.desktop</Filename>
+    <Filename>org.kde.kmail.desktop</Filename>
+    <Filename>org.kde.konversation.desktop</Filename>
+    <Filename>thunderbird.desktop</Filename>
+    <Filename>org.kde.blogilo.desktop</Filename>
+    <Filename>org.kde.contactprintthemeeditor.desktop</Filename>
+    <Filename>org.kde.contactthemeeditor.desktop</Filename>
+    <Filename>kde4-kopete.desktop</Filename>
+    <Filename>messengerfordesktop.desktop</Filename>
+    <Filename>empathy.desktop</Filename>
+    <Filename>franz.desktop</Filename>
+    <Filename>pidgin.desktop</Filename>
+   </Include>
+   <Exclude/>
+   <Layout>
+    <Merge type="files"/>
+    <Filename>org.kde.blogilo.desktop</Filename>
+    <Filename>org.kde.contactprintthemeeditor.desktop</Filename>
+    <Filename>org.kde.contactthemeeditor.desktop</Filename>
+    <Filename>empathy.desktop</Filename>
+    <Filename>franz.desktop</Filename>
+    <Filename>hexchat.desktop</Filename>
+    <Filename>org.kde.ktpcontactlist.desktop</Filename>
+    <Filename>org.kde.ktplogviewer.desktop</Filename>
+    <Filename>org.kde.headerthemeeditor.desktop</Filename>
+    <Filename>org.kde.kmail.desktop</Filename>
+    <Filename>org.kde.konversation.desktop</Filename>
+    <Filename>kde4-kopete.desktop</Filename>
+    <Filename>messengerfordesktop.desktop</Filename>
+    <Filename>pidgin.desktop</Filename>
+    <Filename>thunderbird.desktop</Filename>
+   </Layout>
+  </Menu>
+  <Exclude>
+   <Filename>hexchat.desktop</Filename>
+   <Filename>org.kde.ktpcontactlist.desktop</Filename>
+   <Filename>org.kde.ktplogviewer.desktop</Filename>
+   <Filename>org.kde.headerthemeeditor.desktop</Filename>
+   <Filename>org.kde.kmail.desktop</Filename>
+   <Filename>org.kde.konversation.desktop</Filename>
+   <Filename>thunderbird.desktop</Filename>
+   <Filename>deluge.desktop</Filename>
+   <Filename>kde4-kget.desktop</Filename>
+   <Filename>qBittorrent.desktop</Filename>
+   <Filename>bssh.desktop</Filename>
+   <Filename>bvnc.desktop</Filename>
+   <Filename>org.kde.blogilo.desktop</Filename>
+   <Filename>org.kde.contactprintthemeeditor.desktop</Filename>
+   <Filename>org.kde.contactthemeeditor.desktop</Filename>
+   <Filename>org.kde.storageservicemanager.desktop</Filename>
+   <Filename>kde4-kopete.desktop</Filename>
+   <Filename>firefox.desktop</Filename>
+   <Filename>google-chrome.desktop</Filename>
+   <Filename>kde4-konqbrowser.desktop</Filename>
+   <Filename>org.kde.ksshaskpass.desktop</Filename>
+   <Filename>empathy.desktop</Filename>
+   <Filename>epiphany.desktop</Filename>
+   <Filename>chromium.desktop</Filename>
+   <Filename>kde4-knetattach.desktop</Filename>
+   <Filename>links.desktop</Filename>
+   <Filename>qupzilla.desktop</Filename>
+   <Filename>qutebrowser.desktop</Filename>
+   <Filename>kde4-rekonq.desktop</Filename>
+   <Filename>messengerfordesktop.desktop</Filename>
+   <Filename>GitKraken.desktop</Filename>
+   <Filename>franz.desktop</Filename>
+   <Filename>pidgin.desktop</Filename>
+   <Filename>steam.desktop</Filename>
+   <Filename>org.kde.pimsettingexporter.desktop</Filename>
+  </Exclude>
+  <Menu>
+   <Name>Download Managers</Name>
+   <Directory>Download Managers.directory</Directory>
+   <Include>
+    <Filename>deluge.desktop</Filename>
+    <Filename>kde4-kget.desktop</Filename>
+    <Filename>qBittorrent.desktop</Filename>
+    <Filename>org.kde.storageservicemanager.desktop</Filename>
+   </Include>
+   <Layout>
+    <Merge type="files"/>
+    <Filename>org.kde.storageservicemanager.desktop</Filename>
+    <Filename>deluge.desktop</Filename>
+    <Filename>kde4-kget.desktop</Filename>
+    <Filename>qBittorrent.desktop</Filename>
+   </Layout>
+  </Menu>
+  <Menu>
+   <Name>SSH</Name>
+   <Menu>
+    <Name>VNC</Name>
+    <Directory>SSH-VNC.directory</Directory>
+    <NotDeleted/>
+    <Include>
+     <Filename>bssh.desktop</Filename>
+     <Filename>bvnc.desktop</Filename>
+     <Filename>org.kde.ksshaskpass.desktop</Filename>
+    </Include>
+    <Layout>
+     <Merge type="files"/>
+     <Filename>bssh.desktop</Filename>
+     <Filename>bvnc.desktop</Filename>
+     <Filename>org.kde.ksshaskpass.desktop</Filename>
+    </Layout>
+   </Menu>
+   <Deleted/>
+  </Menu>
+  <Menu>
+   <Name>Terminal</Name>
+   <Deleted/>
+  </Menu>
+  <Menu>
+   <Name>Web Browsers</Name>
+   <Directory>Web Browsers.directory</Directory>
+   <Include>
+    <Filename>firefox.desktop</Filename>
+    <Filename>google-chrome.desktop</Filename>
+    <Filename>kde4-konqbrowser.desktop</Filename>
+    <Filename>epiphany.desktop</Filename>
+    <Filename>chromium.desktop</Filename>
+    <Filename>links.desktop</Filename>
+    <Filename>qupzilla.desktop</Filename>
+    <Filename>qutebrowser.desktop</Filename>
+    <Filename>kde4-rekonq.desktop</Filename>
+   </Include>
+   <Layout>
+    <Merge type="files"/>
+    <Filename>firefox.desktop</Filename>
+    <Filename>chromium.desktop</Filename>
+    <Filename>google-chrome.desktop</Filename>
+    <Filename>links.desktop</Filename>
+    <Filename>kde4-konqbrowser.desktop</Filename>
+    <Filename>qupzilla.desktop</Filename>
+    <Filename>qutebrowser.desktop</Filename>
+    <Filename>kde4-rekonq.desktop</Filename>
+    <Filename>epiphany.desktop</Filename>
+   </Layout>
+   <Exclude/>
+  </Menu>
+  <Menu>
+   <Name>SSH-2</Name>
+   <Deleted/>
+  </Menu>
+  <Move>
+   <Old>SSH</Old>
+   <New>SSH-2</New>
+  </Move>
+  <Menu>
+   <Name>VNC</Name>
+   <NotDeleted/>
+  </Menu>
+  <Move>
+   <Old>SSH-2/VNC</Old>
+   <New>VNC</New>
+  </Move>
   <Include>
-   <Category>Atom</Category>
+   <Filename>org.kde.akregator.desktop</Filename>
+   <Filename>kde4-Kppp.desktop</Filename>
+   <Filename>kde4-krdc.desktop</Filename>
+   <Filename>org.kde.krfb.desktop</Filename>
+   <Filename>org.kde.ktnef.desktop</Filename>
+  </Include>
+  <Layout>
+   <Merge type="menus"/>
+   <Menuname>SSH</Menuname>
+   <Menuname>Download Managers</Menuname>
+   <Menuname>Social</Menuname>
+   <Menuname>VNC</Menuname>
+   <Menuname>Web Browsers</Menuname>
+   <Merge type="files"/>
+   <Filename>org.kde.akregator.desktop</Filename>
+   <Filename>google-earth.desktop</Filename>
+   <Filename>org.kde.knetattach.desktop</Filename>
+   <Filename>kde4-Kppp.desktop</Filename>
+   <Filename>org.kde.krdc.desktop</Filename>
+   <Filename>org.kde.krfb.desktop</Filename>
+   <Filename>org.kde.ktnef.desktop</Filename>
+   <Filename>org.gnome.Polari.desktop</Filename>
+   <Filename>vinagre.desktop</Filename>
+   <Filename>org.kde.sieveeditor.desktop</Filename>
+   <Separator/>
+   <Menuname>More</Menuname>
+  </Layout>
+ </Menu>
+ <Menu>
+  <Name>SSH</Name>
+  <Menu>
+   <Name>VNC</Name>
+   <NotDeleted/>
+  </Menu>
+  <Deleted/>
+ </Menu>
+ <Move>
+  <Old>Internet/SSH/VNC</Old>
+  <New>SSH/VNC</New>
+ </Move>
+ <Move>
+  <Old>SSH/VNC</Old>
+  <New>Internet/SSH/VNC</New>
+ </Move>
+ <Menu>
+  <Name>Graphics</Name>
+  <Exclude>
+   <Filename>libreoffice-draw.desktop</Filename>
+  </Exclude>
+  <Menu>
+   <Name>More</Name>
+   <Layout/>
+   <Exclude>
+    <Filename>kde4-kcolorchooser.desktop</Filename>
+    <Filename>org.kde.kruler.desktop</Filename>
+   </Exclude>
+  </Menu>
+  <Include>
+   <Filename>kde4-kcolorchooser.desktop</Filename>
+   <Filename>org.kde.kruler.desktop</Filename>
+   <Filename>cuttlefish.desktop</Filename>
+  </Include>
+  <Layout>
+   <Merge type="files"/>
+   <Filename>cuttlefish.desktop</Filename>
+   <Filename>evince.desktop</Filename>
+   <Filename>eog.desktop</Filename>
+   <Filename>inkscape.desktop</Filename>
+   <Filename>gimp.desktop</Filename>
+   <Filename>org.kde.gwenview.desktop</Filename>
+   <Filename>kde4-kcolorchooser.desktop</Filename>
+   <Filename>kde4-kolourpaint.desktop</Filename>
+   <Filename>org.kde.kruler.desktop</Filename>
+   <Filename>kde4-okular.desktop</Filename>
+   <Filename>xsane.desktop</Filename>
+   <Separator/>
+   <Merge type="menus"/>
+   <Menuname>More</Menuname>
+  </Layout>
+ </Menu>
+ <Menu>
+  <Name>.hidden</Name>
+  <Include>
+   <Filename>libreoffice-draw.desktop</Filename>
+   <Filename>emacs.desktop</Filename>
    <Filename>atom.desktop</Filename>
+   <Filename>atom-beta.desktop</Filename>
+   <Filename>kde4-knetattach.desktop</Filename>
+   <Filename>qt5-virt-manager.desktop</Filename>
+   <Filename>vim.desktop</Filename>
+   <Filename>ipython2.desktop</Filename>
+   <Filename>ipython.desktop</Filename>
+   <Filename>steam.desktop</Filename>
+   <Filename>GitKraken.desktop</Filename>
+   <Filename>komodo-edit.desktop</Filename>
+   <Filename>deepin-terminal.desktop</Filename>
+   <Filename>Thunar-bulk-rename.desktop</Filename>
+   <Filename>pcmanfm.desktop</Filename>
+   <Filename>Thunar.desktop</Filename>
+   <Filename>xfce4-taskmanager.desktop</Filename>
+   <Filename>elementary_test.desktop</Filename>
+   <Filename>jupyter-qtconsole.desktop</Filename>
+   <Filename>org.kde.headerthemeeditor.desktop</Filename>
+   <Filename>org.kde.kmail.desktop</Filename>
+   <Filename>thunar-settings.desktop</Filename>
+   <Filename>LightTable.desktop</Filename>
+   <Filename>sublime_text.desktop</Filename>
+   <Filename>codebox.desktop</Filename>
+   <Filename>runescape.desktop</Filename>
+   <Filename>textadept.desktop</Filename>
+   <Filename>textadept-curses.desktop</Filename>
+   <Filename>org.kde.pimsettingexporter.desktop</Filename>
+   <Filename>www.octave.org-octave.desktop</Filename>
+   <Filename>libreoffice-math.desktop</Filename>
+   <Filename>org.kde.cantor.desktop</Filename>
+   <Filename>org.kde.rocs.desktop</Filename>
+   <Filename>org.kde.kalgebra.desktop</Filename>
+   <Filename>kalgebramobile.desktop</Filename>
+   <Filename>lighttable.desktop</Filename>
+   <Filename>sublime_text_3.desktop</Filename>
   </Include>
  </Menu>
- <!-- Development Tools -->
  <Menu>
   <Name>Development</Name>
-  <Include>
-   <Category>Development</Category>
-  </Include>
+  <Menu>
+   <Name>Qt</Name>
+   <Directory>Qt.directory</Directory>
+   <Include>
+    <Filename>assistant-qt4.desktop</Filename>
+    <Filename>designer-qt4.desktop</Filename>
+    <Filename>linguist-qt4.desktop</Filename>
+    <Filename>qdbusviewer-qt4.desktop</Filename>
+    <Filename>assistant.desktop</Filename>
+    <Filename>designer.desktop</Filename>
+    <Filename>linguist.desktop</Filename>
+    <Filename>qdbusviewer.desktop</Filename>
+    <Filename>kde4-kuiviewer.desktop</Filename>
+   </Include>
+   <Menu>
+    <Name>Text Editors</Name>
+    <Directory>Text Editors.directory</Directory>
+   </Menu>
+   <Layout>
+    <Merge type="files"/>
+    <Filename>kde4-kuiviewer.desktop</Filename>
+    <Filename>assistant-qt4.desktop</Filename>
+    <Filename>designer-qt4.desktop</Filename>
+    <Filename>linguist-qt4.desktop</Filename>
+    <Filename>qdbusviewer-qt4.desktop</Filename>
+    <Filename>assistant.desktop</Filename>
+    <Filename>designer.desktop</Filename>
+    <Filename>linguist.desktop</Filename>
+    <Filename>qdbusviewer.desktop</Filename>
+   </Layout>
+  </Menu>
+  <Menu>
+   <Name>Text Editors</Name>
+   <NotDeleted/>
+   <Include>
+    <Filename>emacs.desktop</Filename>
+    <Filename>org.gnome.gedit.desktop</Filename>
+    <Filename>gvim.desktop</Filename>
+    <Filename>org.kde.kate.desktop</Filename>
+    <Filename>org.kde.kwrite.desktop</Filename>
+    <Filename>atom.desktop</Filename>
+    <Filename>atom-beta.desktop</Filename>
+    <Filename>brackets.desktop</Filename>
+    <Filename>leafpad.desktop</Filename>
+    <Filename>komodo-edit.desktop</Filename>
+    <Filename>mousepad.desktop</Filename>
+    <Filename>gitbook-editor.desktop</Filename>
+    <Filename>sublime-text.desktop</Filename>
+    <Filename>sublime_text_3.desktop</Filename>
+    <Filename>remarkable.desktop</Filename>
+    <Filename>visual-studio-code.desktop</Filename>
+   </Include>
+   <Exclude>
+    <Filename>sublime_text.desktop</Filename>
+    <Filename>textadept.desktop</Filename>
+    <Filename>textadept-curses.desktop</Filename>
+   </Exclude>
+   <Layout>
+    <Merge type="files"/>
+    <Filename>atom.desktop</Filename>
+    <Filename>atom-beta.desktop</Filename>
+    <Filename>brackets.desktop</Filename>
+    <Filename>emacs.desktop</Filename>
+    <Filename>org.gnome.gedit.desktop</Filename>
+    <Filename>gitbook-editor.desktop</Filename>
+    <Filename>gvim.desktop</Filename>
+    <Filename>org.kde.kate.desktop</Filename>
+    <Filename>komodo-edit.desktop</Filename>
+    <Filename>org.kde.kwrite.desktop</Filename>
+    <Filename>leafpad.desktop</Filename>
+    <Filename>mousepad.desktop</Filename>
+    <Filename>remarkable.desktop</Filename>
+    <Filename>sublime_text_3.desktop</Filename>
+    <Filename>visual-studio-code.desktop</Filename>
+   </Layout>
+  </Menu>
   <Exclude>
-   <Category>TextEditor</Category>
    <Category>IDE</Category>
+   <Filename>assistant-qt4.desktop</Filename>
+   <Filename>designer-qt4.desktop</Filename>
+   <Filename>linguist-qt4.desktop</Filename>
+   <Filename>qdbusviewer-qt4.desktop</Filename>
+   <Filename>assistant.desktop</Filename>
+   <Filename>designer.desktop</Filename>
+   <Filename>linguist.desktop</Filename>
+   <Filename>qdbusviewer.desktop</Filename>
+   <Filename>emacs.desktop</Filename>
+   <Filename>atom.desktop</Filename>
+   <Filename>atom-beta.desktop</Filename>
+   <Filename>brackets.desktop</Filename>
+   <Filename>friendcode-codebox.desktop</Filename>
+   <Filename>eclipse.desktop</Filename>
+   <Filename>netbeans.desktop</Filename>
+   <Filename>spyder3.desktop</Filename>
+   <Filename>spyder.desktop</Filename>
+   <Filename>textadept-curses.desktop</Filename>
+   <Filename>textadept.desktop</Filename>
+   <Filename>qt5-virt-manager.desktop</Filename>
+   <Filename>jupyter-qtconsole.desktop</Filename>
+   <Filename>cuttlefish.desktop</Filename>
+   <Filename>ipython2.desktop</Filename>
+   <Filename>ipython.desktop</Filename>
+   <Filename>kde4-kuiviewer.desktop</Filename>
+   <Filename>org.gnome.Builder.desktop</Filename>
+   <Filename>fluid.desktop</Filename>
+   <Filename>glade.desktop</Filename>
+   <Filename>jconsole.desktop</Filename>
+   <Filename>policytool.desktop</Filename>
+   <Filename>eflete.desktop</Filename>
+   <Filename>org.kde.plasma.themeexplorer.desktop</Filename>
+   <Filename>GitKraken.desktop</Filename>
+   <Filename>gitg.desktop</Filename>
+   <Filename>julia.desktop</Filename>
+   <Filename>CMake.desktop</Filename>
+   <Filename>komodo-edit.desktop</Filename>
+   <Filename>anjuta.desktop</Filename>
+   <Filename>codelite.desktop</Filename>
+   <Filename>sublime_text.desktop</Filename>
+   <Filename>mousepad.desktop</Filename>
+   <Filename>lighttable.desktop</Filename>
+   <Filename>sublime_text_3.desktop</Filename>
+   <Filename>codebox.desktop</Filename>
+   <Filename>accerciser.desktop</Filename>
+   <Filename>org.kde.akonadiconsole.desktop</Filename>
+   <Filename>kde4-cervisia.desktop</Filename>
+   <Filename>gda-browser-5.0.desktop</Filename>
+   <Filename>org.gnome.Devhelp.desktop</Filename>
+   <Filename>elementary_test.desktop</Filename>
+   <Filename>kapptemplate.desktop</Filename>
+   <Filename>kde4-kcachegrind.desktop</Filename>
+   <Filename>org.kde.kompare.desktop</Filename>
+   <Filename>org.kde.umbrello.desktop</Filename>
   </Exclude>
+  <Move>
+   <Old>Qt/Text Editors</Old>
+   <New>Text Editors</New>
+  </Move>
   <Menu>
    <Name>IDEs</Name>
    <Directory>IDEs.directory</Directory>
    <Include>
     <Category>IDE</Category>
+    <Filename>eclipse.desktop</Filename>
+    <Filename>netbeans.desktop</Filename>
+    <Filename>spyder3.desktop</Filename>
+    <Filename>spyder.desktop</Filename>
+    <Filename>codelite.desktop</Filename>
+    <Filename>bluefish.desktop</Filename>
     <Filename>lighttable.desktop</Filename>
-   </Include>
-  </Menu>
- </Menu>
- <!-- End Development Tools -->
- <!-- Education -->
- <Menu>
-  <Name>Education</Name>
-  <Include>
-   <Category>Education</Category>
-   <Category>Physics</Category>
-  </Include>
-  <Exclude>
-   <Category>Math</Category>
-   <Category>Science</Category>
-  </Exclude>
-  <Menu>
-   <Name>Mathematics</Name>
-   <Include>
-    <Category>Calculator</Category>
-    <Category>Math</Category>
-   </Include>
-  </Menu>
-  <Menu>
-   <Name>Science</Name>
-   <Include>
-    <Category>Science</Category>
+    <Filename>codebox.desktop</Filename>
+    <Filename>geany.desktop</Filename>
+    <Filename>anjuta.desktop</Filename>
    </Include>
    <Exclude>
-    <Category>Math</Category>
+    <Filename>cuttlefish.desktop</Filename>
+    <Filename>visual-studio-code.desktop</Filename>
+    <Filename>textadept.desktop</Filename>
+    <Filename>textadept-curses.desktop</Filename>
+    <Filename>LightTable.desktop</Filename>
    </Exclude>
+   <Menu>
+    <Name>X-KDE-KDevelopIDE</Name>
+    <Deleted/>
+   </Menu>
+   <Layout>
+    <Merge type="files"/>
+    <Filename>anjuta.desktop</Filename>
+    <Filename>aptana-studio.desktop</Filename>
+    <Filename>bluefish.desktop</Filename>
+    <Filename>codebox.desktop</Filename>
+    <Filename>codelite.desktop</Filename>
+    <Filename>eclipse.desktop</Filename>
+    <Filename>geany.desktop</Filename>
+    <Filename>kde4-kdevelop.desktop</Filename>
+    <Filename>kde4-kdevelop_ps.desktop</Filename>
+    <Filename>lighttable.desktop</Filename>
+    <Filename>netbeans.desktop</Filename>
+    <Filename>spyder.desktop</Filename>
+    <Filename>spyder3.desktop</Filename>
+   </Layout>
+  </Menu>
+  <Menu>
+   <Name>GUI Builders</Name>
+   <Layout>
+    <Merge type="files"/>
+    <Filename>org.gnome.Builder.desktop</Filename>
+    <Filename>fluid.desktop</Filename>
+    <Filename>glade.desktop</Filename>
+   </Layout>
+   <Directory>GUI Builders.directory</Directory>
+   <Include>
+    <Filename>org.gnome.Builder.desktop</Filename>
+    <Filename>fluid.desktop</Filename>
+    <Filename>glade.desktop</Filename>
+   </Include>
+  </Menu>
+  <Menu>
+   <Name>Java</Name>
+   <Layout>
+    <Merge type="files"/>
+    <Filename>jconsole.desktop</Filename>
+    <Filename>policytool.desktop</Filename>
+   </Layout>
+   <Directory>Java.directory</Directory>
+   <Include>
+    <Filename>jconsole.desktop</Filename>
+    <Filename>policytool.desktop</Filename>
+   </Include>
+  </Menu>
+  <Menu>
+   <Name>Python</Name>
+   <Layout>
+    <Merge type="files"/>
+    <Filename>ipython.desktop</Filename>
+    <Filename>ipython2.desktop</Filename>
+    <Filename>jupyter-qtconsole.desktop</Filename>
+   </Layout>
+   <Directory>Python.directory</Directory>
+   <NotDeleted/>
+   <Include>
+    <Filename>jupyter-qtconsole.desktop</Filename>
+    <Filename>ipython2.desktop</Filename>
+    <Filename>ipython.desktop</Filename>
+   </Include>
+  </Menu>
+  <Menu>
+   <Name>Theme Editors</Name>
+   <Layout>
+    <Merge type="files"/>
+    <Filename>eflete.desktop</Filename>
+    <Filename>org.kde.plasma.themeexplorer.desktop</Filename>
+   </Layout>
+   <Directory>Theme Editors.directory</Directory>
+   <NotDeleted/>
+   <Include>
+    <Filename>eflete.desktop</Filename>
+    <Filename>org.kde.plasma.themeexplorer.desktop</Filename>
+   </Include>
+  </Menu>
+  <Move>
+   <Old>X-KDE-KDevelopIDE</Old>
+   <New>IDEs/X-KDE-KDevelopIDE</New>
+  </Move>
+  <Menu>
+   <Name>Web Development</Name>
+   <Exclude>
+    <Filename>visual-studio-code.desktop</Filename>
+    <Filename>bluefish.desktop</Filename>
+   </Exclude>
+   <Layout>
+    <Merge type="files"/>
+    <Filename>kde4-kimagemapeditor.desktop</Filename>
+    <Filename>kde4-klinkstatus.desktop</Filename>
+   </Layout>
+  </Menu>
+  <Menu>
+   <Name>git</Name>
+   <Directory>git.directory</Directory>
+   <Include>
+    <Filename>gitg.desktop</Filename>
+    <Filename>GitKraken-2.desktop</Filename>
+   </Include>
+   <Exclude>
+    <Filename>GitKraken.desktop</Filename>
+   </Exclude>
+   <Layout>
+    <Merge type="files"/>
+    <Filename>gitg.desktop</Filename>
+    <Filename>GitKraken-2.desktop</Filename>
+   </Layout>
+  </Menu>
+  <Menu>
+   <Name>Languages</Name>
+   <Layout>
+    <Merge type="files"/>
+    <Filename>CMake.desktop</Filename>
+    <Filename>julia.desktop</Filename>
+   </Layout>
+   <Directory>Languages.directory</Directory>
+   <Include>
+    <Filename>julia.desktop</Filename>
+    <Filename>CMake.desktop</Filename>
+   </Include>
+   <NotDeleted/>
+  </Menu>
+  <Include/>
+  <Menu>
+   <Name>Miscellaneous</Name>
+   <Menu>
+    <Name>Java</Name>
+    <Layout>
+     <Merge type="files"/>
+     <Filename>jconsole.desktop</Filename>
+     <Filename>policytool.desktop</Filename>
+    </Layout>
+    <NotDeleted/>
+    <Menu>
+     <Name>Translation</Name>
+     <NotDeleted/>
+    </Menu>
+   </Menu>
+   <Menu>
+    <Name>Languages</Name>
+    <Layout>
+     <Merge type="files"/>
+     <Filename>CMake.desktop</Filename>
+     <Filename>julia.desktop</Filename>
+    </Layout>
+    <NotDeleted/>
+    <Menu>
+     <Name>Qt</Name>
+     <NotDeleted/>
+    </Menu>
+   </Menu>
+   <Directory>Miscellaneous.directory</Directory>
+   <Menu>
+    <Name>Web Development</Name>
+    <NotDeleted/>
+   </Menu>
+   <Menu>
+    <Name>GUI Builders</Name>
+    <NotDeleted/>
+   </Menu>
+   <Menu>
+    <Name>Translation</Name>
+    <NotDeleted/>
+   </Menu>
+   <Move>
+    <Old>Java/Translation</Old>
+    <New>Translation</New>
+   </Move>
+   <Include>
+    <Filename>accerciser.desktop</Filename>
+    <Filename>org.kde.akonadiconsole.desktop</Filename>
+    <Filename>kde4-cervisia.desktop</Filename>
+    <Filename>gda-browser-5.0.desktop</Filename>
+    <Filename>org.gnome.Devhelp.desktop</Filename>
+    <Filename>elementary_test.desktop</Filename>
+    <Filename>kapptemplate.desktop</Filename>
+    <Filename>kde4-kcachegrind.desktop</Filename>
+    <Filename>org.kde.kompare.desktop</Filename>
+    <Filename>org.kde.umbrello.desktop</Filename>
+   </Include>
+   <Menu>
+    <Name>Qt</Name>
+    <NotDeleted/>
+   </Menu>
+   <Move>
+    <Old>Qt</Old>
+    <New>Languages/Qt</New>
+   </Move>
+   <Move>
+    <Old>Languages/Qt</Old>
+    <New>Qt</New>
+   </Move>
+   <Layout>
+    <Merge type="menus"/>
+    <Menuname>GUI Builders</Menuname>
+    <Menuname>Java</Menuname>
+    <Menuname>Languages</Menuname>
+    <Menuname>Python</Menuname>
+    <Menuname>Qt</Menuname>
+    <Menuname>Theme Editors</Menuname>
+    <Menuname>Translation</Menuname>
+    <Menuname>Web Development</Menuname>
+    <Merge type="files"/>
+    <Filename>accerciser.desktop</Filename>
+    <Filename>org.kde.akonadiconsole.desktop</Filename>
+    <Filename>kde4-cervisia.desktop</Filename>
+    <Filename>gda-browser-5.0.desktop</Filename>
+    <Filename>org.gnome.Devhelp.desktop</Filename>
+    <Filename>elementary_test.desktop</Filename>
+    <Filename>kapptemplate.desktop</Filename>
+    <Filename>kde4-kcachegrind.desktop</Filename>
+    <Filename>org.kde.kompare.desktop</Filename>
+    <Filename>org.kde.umbrello.desktop</Filename>
+   </Layout>
+   <Menu>
+    <Name>Python</Name>
+    <NotDeleted/>
+   </Menu>
+   <Menu>
+    <Name>Theme Editors</Name>
+    <NotDeleted/>
+   </Menu>
+  </Menu>
+  <Move>
+   <Old>Web Development</Old>
+   <New>Miscellaneous/Web Development</New>
+  </Move>
+  <Move>
+   <Old>Java</Old>
+   <New>Miscellaneous/Java</New>
+  </Move>
+  <Move>
+   <Old>GUI Builders</Old>
+   <New>Miscellaneous/GUI Builders</New>
+  </Move>
+  <Move>
+   <Old>Translation</Old>
+   <New>Miscellaneous/Java/Translation</New>
+  </Move>
+  <Move>
+   <Old>Qt</Old>
+   <New>Miscellaneous/Qt</New>
+  </Move>
+  <Move>
+   <Old>Languages</Old>
+   <New>Miscellaneous/Languages</New>
+  </Move>
+  <Move>
+   <Old>Python</Old>
+   <New>Miscellaneous/Python</New>
+  </Move>
+  <Move>
+   <Old>Theme Editors</Old>
+   <New>Miscellaneous/Theme Editors</New>
+  </Move>
+  <Layout>
+   <Merge type="menus"/>
+   <Menuname>git</Menuname>
+   <Menuname>IDEs</Menuname>
+   <Menuname>Text Editors</Menuname>
+   <Menuname>Miscellaneous-2</Menuname>
+  </Layout>
+  <Menu>
+   <Name>Miscellaneous-2</Name>
+   <NotDeleted/>
+  </Menu>
+  <Move>
+   <Old>Miscellaneous</Old>
+   <New>Miscellaneous-2</New>
+  </Move>
+ </Menu>
+ <Menu>
+  <Name>Utilities</Name>
+  <Exclude>
+   <Filename>emacs.desktop</Filename>
+   <Filename>org.gnome.gedit.desktop</Filename>
+   <Filename>gvim.desktop</Filename>
+   <Filename>org.kde.kate.desktop</Filename>
+   <Filename>org.kde.kwrite.desktop</Filename>
+   <Filename>atom.desktop</Filename>
+   <Filename>atom-beta.desktop</Filename>
+   <Filename>vim.desktop</Filename>
+   <Filename>textadept.desktop</Filename>
+   <Filename>textadept-curses.desktop</Filename>
+   <Filename>remarkable.desktop</Filename>
+   <Filename>friendcode-codebox.desktop</Filename>
+   <Filename>leafpad.desktop</Filename>
+   <Filename>ipython2.desktop</Filename>
+   <Filename>ipython.desktop</Filename>
+   <Filename>GitKraken.desktop</Filename>
+   <Filename>komodo-edit.desktop</Filename>
+   <Filename>mousepad.desktop</Filename>
+   <Filename>deepin-terminal.desktop</Filename>
+   <Filename>Thunar-bulk-rename.desktop</Filename>
+   <Filename>pcmanfm.desktop</Filename>
+   <Filename>Thunar.desktop</Filename>
+   <Filename>nemo.desktop</Filename>
+   <Filename>org.gnome.Nautilus.desktop</Filename>
+   <Filename>sublime-text.desktop</Filename>
+   <Filename>sublime_text.desktop</Filename>
+   <Filename>xfce4-taskmanager.desktop</Filename>
+   <Filename>elementary_test.desktop</Filename>
+   <Filename>jupyter-qtconsole.desktop</Filename>
+   <Filename>codebox.desktop</Filename>
+   <Filename>gnome-calculator.desktop</Filename>
+   <Filename>lighttable.desktop</Filename>
+   <Filename>sublime_text_3.desktop</Filename>
+   <Filename>org.kde.kcalc.desktop</Filename>
+  </Exclude>
+  <Layout>
+   <Merge type="menus"/>
+   <Menuname>XUtilities</Menuname>
+   <Merge type="files"/>
+   <Filename>accerciser.desktop</Filename>
+   <Filename>gucharmap.desktop</Filename>
+   <Filename>org.gnome.Characters.desktop</Filename>
+   <Filename>org.gnome.clocks.desktop</Filename>
+   <Filename>tracker-needle.desktop</Filename>
+   <Filename>org.gnome.DiskUtility.desktop</Filename>
+   <Filename>org.gnome.font-viewer.desktop</Filename>
+   <Filename>kde4-jovieapp.desktop</Filename>
+   <Filename>org.kde.KCharSelect.desktop</Filename>
+   <Filename>org.kde.kdebugsettings.desktop</Filename>
+   <Filename>kde4-kfilereplace.desktop</Filename>
+   <Filename>org.kde.kfloppy.desktop</Filename>
+   <Filename>kde4-kgpg.desktop</Filename>
+   <Filename>kde4-kmag.desktop</Filename>
+   <Filename>kde4-kmousetool.desktop</Filename>
+   <Filename>kde4-kmouth.desktop</Filename>
+   <Filename>org.kde.kteatime.desktop</Filename>
+   <Filename>org.kde.ktimer.desktop</Filename>
+   <Filename>org.gnome.Logs.desktop</Filename>
+   <Filename>org.gnome.Maps.desktop</Filename>
+   <Filename>gnome-nettool.desktop</Filename>
+   <Filename>org.gnome.bijiben.desktop</Filename>
+   <Filename>org.kde.okteta.desktop</Filename>
+   <Filename>onboard.desktop</Filename>
+   <Filename>onboard-settings.desktop</Filename>
+   <Filename>globaltime.desktop</Filename>
+   <Filename>seahorse.desktop</Filename>
+   <Filename>orca.desktop</Filename>
+   <Filename>kde4-sweeper.desktop</Filename>
+   <Filename>org.gnome.Weather.Application.desktop</Filename>
+   <Filename>xfburn.desktop</Filename>
+   <Filename>org.kde.ark.desktop</Filename>
+   <Filename>org.kde.filelight.desktop</Filename>
+   <Filename>org.kde.kalarm.desktop</Filename>
+   <Filename>org.kde.kleopatra.desktop</Filename>
+   <Filename>org.kde.klipper.desktop</Filename>
+   <Filename>org.kde.importwizard.desktop</Filename>
+   <Filename>org.kde.knotes.desktop</Filename>
+   <Filename>org.kde.ktnef.desktop</Filename>
+   <Filename>org.kde.spectacle.desktop</Filename>
+   <Separator/>
+   <Menuname>More</Menuname>
+  </Layout>
+ </Menu>
+ <Menu>
+  <Name>VNC</Name>
+  <NotDeleted/>
+ </Menu>
+ <Move>
+  <Old>Internet/VNC</Old>
+  <New>VNC</New>
+ </Move>
+ <Move>
+  <Old>VNC</Old>
+  <New>Internet/VNC</New>
+ </Move>
+ <Menu>
+  <Name>friendcode-codebox</Name>
+  <Deleted/>
+ </Menu>
+ <Menu>
+  <Name>System</Name>
+  <Include/>
+  <Exclude>
+   <Filename>qt5-virt-manager.desktop</Filename>
+   <Filename>deepin-terminal.desktop</Filename>
+   <Filename>lxterminal.desktop</Filename>
+   <Filename>xfce4-terminal.desktop</Filename>
+   <Filename>org.kde.konsole.desktop</Filename>
+   <Filename>org.gnome.Terminal.desktop</Filename>
+   <Filename>uxterm.desktop</Filename>
+   <Filename>xterm.desktop</Filename>
+   <Filename>org.kde.yakuake.desktop</Filename>
+   <Filename>pcmanfm.desktop</Filename>
+   <Filename>Thunar.desktop</Filename>
+   <Filename>Thunar-bulk-rename.desktop</Filename>
+   <Filename>org.kde.dolphin.desktop</Filename>
+   <Filename>lxtask.desktop</Filename>
+   <Filename>xfce4-taskmanager.desktop</Filename>
+   <Filename>org.kde.ksysguard.desktop</Filename>
+   <Filename>gnome-system-monitor-kde.desktop</Filename>
+   <Filename>virtualbox.desktop</Filename>
+   <Filename>virt-manager.desktop</Filename>
+   <Filename>pamac-manager.desktop</Filename>
+   <Filename>appset-qt.desktop</Filename>
+   <Filename>pamac-updater.desktop</Filename>
+   <Filename>pkgbrowser.desktop</Filename>
+  </Exclude>
+  <Menu>
+   <Name>File managers</Name>
+   <Directory>File managers.directory</Directory>
+   <Include>
+    <Filename>pcmanfm.desktop</Filename>
+    <Filename>Thunar.desktop</Filename>
+    <Filename>Thunar-bulk-rename.desktop</Filename>
+    <Filename>org.kde.dolphin.desktop</Filename>
+    <Filename>nemo.desktop</Filename>
+    <Filename>org.gnome.Nautilus.desktop</Filename>
+   </Include>
+   <Layout>
+    <Merge type="files"/>
+    <Filename>Thunar-bulk-rename.desktop</Filename>
+    <Filename>org.kde.dolphin.desktop</Filename>
+    <Filename>org.gnome.Nautilus.desktop</Filename>
+    <Filename>nemo.desktop</Filename>
+    <Filename>pcmanfm.desktop</Filename>
+    <Filename>Thunar.desktop</Filename>
+   </Layout>
+  </Menu>
+  <Menu>
+   <Name>Terminal Emulators</Name>
+   <Layout>
+    <Merge type="files"/>
+    <Filename>deepin-terminal.desktop</Filename>
+    <Filename>org.kde.konsole.desktop</Filename>
+    <Filename>lxterminal.desktop</Filename>
+    <Filename>org.gnome.Terminal.desktop</Filename>
+    <Filename>uxterm.desktop</Filename>
+    <Filename>xfce4-terminal.desktop</Filename>
+    <Filename>xterm.desktop</Filename>
+    <Filename>org.kde.yakuake.desktop</Filename>
+   </Layout>
+   <Directory>Terminal Emulators.directory</Directory>
+   <Menu>
+    <Name>Terminal</Name>
+    <Include/>
+    <Exclude>
+     <Filename>xfce4-terminal.desktop</Filename>
+    </Exclude>
+    <Deleted/>
+   </Menu>
+   <Include>
+    <Filename>deepin-terminal.desktop</Filename>
+    <Filename>lxterminal.desktop</Filename>
+    <Filename>xfce4-terminal.desktop</Filename>
+    <Filename>org.kde.konsole.desktop</Filename>
+    <Filename>org.gnome.Terminal.desktop</Filename>
+    <Filename>uxterm.desktop</Filename>
+    <Filename>xterm.desktop</Filename>
+    <Filename>org.kde.yakuake.desktop</Filename>
+   </Include>
+  </Menu>
+  <Move>
+   <Old>Terminal</Old>
+   <New>Terminal Emulators/Terminal</New>
+  </Move>
+  <Menu>
+   <Name>Task Managers</Name>
+   <Layout>
+    <Merge type="files"/>
+    <Filename>gnome-system-monitor-kde.desktop</Filename>
+    <Filename>org.kde.ksysguard.desktop</Filename>
+    <Filename>lxtask.desktop</Filename>
+    <Filename>xfce4-taskmanager.desktop</Filename>
+   </Layout>
+   <Directory>Task Managers.directory</Directory>
+   <Include>
+    <Filename>lxtask.desktop</Filename>
+    <Filename>xfce4-taskmanager.desktop</Filename>
+    <Filename>org.kde.ksysguard.desktop</Filename>
+    <Filename>gnome-system-monitor-kde.desktop</Filename>
+   </Include>
+  </Menu>
+  <Menu>
+   <Name>Virtualization</Name>
+   <Layout>
+    <Merge type="files"/>
+    <Filename>virtualbox.desktop</Filename>
+    <Filename>virt-manager.desktop</Filename>
+   </Layout>
+   <Directory>Virtualization.directory</Directory>
+   <Include>
+    <Filename>virtualbox.desktop</Filename>
+    <Filename>virt-manager.desktop</Filename>
+   </Include>
+  </Menu>
+  <Layout>
+   <Merge type="menus"/>
+   <Menuname>File managers</Menuname>
+   <Menuname>Package Managers</Menuname>
+   <Menuname>Task Managers</Menuname>
+   <Menuname>Terminal Emulators</Menuname>
+   <Menuname>Virtualization</Menuname>
+   <Menuname>ScreenSavers</Menuname>
+   <Merge type="files"/>
+   <Filename>xfce4-sensors.desktop</Filename>
+   <Filename>avahi-discover.desktop</Filename>
+   <Filename>gcm-viewer.desktop</Filename>
+   <Filename>ca.desrt.dconf-editor.desktop</Filename>
+   <Filename>lstopo.desktop</Filename>
+   <Filename>org.kde.kinfocenter.desktop</Filename>
+   <Filename>kde4-kdf.desktop</Filename>
+   <Filename>org.kde.krfb.desktop</Filename>
+   <Filename>org.kde.ksystemlog.desktop</Filename>
+   <Filename>kde4-kuser.desktop</Filename>
+   <Filename>org.kde.kwalletmanager5.desktop</Filename>
+   <Filename>kde4-kwikdisk.desktop</Filename>
+   <Filename>org.gnome.Logs.desktop</Filename>
+   <Filename>gnome-nettool.desktop</Filename>
+   <Filename>org.kde.ksshaskpass.desktop</Filename>
+   <Separator/>
+   <Menuname>More</Menuname>
+  </Layout>
+  <Menu>
+   <Name>Package Managers</Name>
+   <Layout>
+    <Merge type="files"/>
+    <Filename>pamac-manager.desktop</Filename>
+    <Filename>appset-qt.desktop</Filename>
+    <Filename>pamac-updater.desktop</Filename>
+    <Filename>pkgbrowser.desktop</Filename>
+   </Layout>
+   <Directory>Package Managers.directory</Directory>
+   <Include>
+    <Filename>pamac-manager.desktop</Filename>
+    <Filename>appset-qt.desktop</Filename>
+    <Filename>pamac-updater.desktop</Filename>
+    <Filename>pkgbrowser.desktop</Filename>
+   </Include>
   </Menu>
  </Menu>
- <!-- End Education -->
- <!-- File Managers-->
+ <Include/>
+ <Exclude>
+  <Filename>gitg.desktop</Filename>
+ </Exclude>
  <Menu>
-  <Name>File Managers</Name>
-  <Directory>File_Managers.directory</Directory>
-  <Include>
-   <Category>FileManager</Category>
-  </Include>
+  <Name>Languages</Name>
+  <NotDeleted/>
  </Menu>
- <!-- Games -->
+ <Move>
+  <Old>Development/Languages</Old>
+  <New>Languages</New>
+ </Move>
+ <Move>
+  <Old>Languages</Old>
+  <New>Development/Languages</New>
+ </Move>
  <Menu>
   <Name>Games</Name>
   <Include>
-   <Category>Game</Category>
-  </Include>
- </Menu>
- <!-- End Games -->
- <!-- Graphics -->
- <Menu>
-  <Name>Graphics</Name>
-  <Include>
-   <And>
-    <Category>Graphics</Category>
-    <Not>
-     <Category>Utility</Category>
-     <Category>Viewer</Category>
-    </Not>
-   </And>
-  </Include>
- </Menu>
- <!-- End Graphics -->
- <Menu>
-  <Name>gVim</Name>
-  <Directory>gVim.directory</Directory>
-  <NotDeleted/>
-  <Include>
-   <Category>gVim</Category>
-  </Include>
- </Menu>
- <!-- Internet -->
- <Menu>
-  <Name>Internet</Name>
-  <Include>
-   <Category>Network</Category>
+   <Filename>runescape-launcher.desktop</Filename>
   </Include>
   <Exclude>
-   <Category>Email</Category>
-   <Category>FileTransfer</Category>
-   <Category>GTK</Category>
-   <Category>InstantMessaging</Category>
-   <Category>IRCClient</Category>
-   <Category>P2P</Category>
-   <Category>WebBrowser</Category>
+   <Filename>steam.desktop</Filename>
+   <Filename>runescape.desktop</Filename>
   </Exclude>
+  <Layout>
+   <Merge type="menus"/>
+   <Menuname>Arcade</Menuname>
+   <Menuname>Board</Menuname>
+   <Menuname>Card</Menuname>
+   <Menuname>Kidsgames</Menuname>
+   <Menuname>Logic</Menuname>
+   <Menuname>TacticStrategy</Menuname>
+   <Merge type="files"/>
+   <Filename>org.gnome.gnome-2048.desktop</Filename>
+   <Filename>alienarena.desktop</Filename>
+   <Filename>ARK Survival Of The Fittest.desktop</Filename>
+   <Filename>deepin-game-center.desktop</Filename>
+   <Filename>quadrapassel.desktop</Filename>
+   <Filename>rollemup.desktop</Filename>
+   <Filename>runescape-launcher.desktop</Filename>
+   <Menuname>Toys</Menuname>
+  </Layout>
   <Menu>
-   <Name>Download Managers</Name>
-   <Directory>BitTorrent_Clients.directory</Directory>
-   <Include>
-    <Category>FileTransfer</Category>
-    <Category>P2P</Category>
-   </Include>
-  </Menu>
-  <Menu>
-   <Name>Social</Name>
-   <Directory>Social.directory</Directory>
-   <Include>
-    <Category>Email</Category>
-    <Category>InstantMessaging</Category>
-    <Category>IRCClient</Category>
-   </Include>
-  </Menu>
-  <Menu>
-   <Name>Web Browsers</Name>
-   <Directory>Web_Browser.directory</Directory>
-   <Include>
-    <Category>WebBrowser</Category>
-   </Include>
+   <Name>Toys</Name>
+   <NotDeleted/>
   </Menu>
  </Menu>
- <!-- End Internet -->
- <!-- Multimedia -->
  <Menu>
-  <Name>Multimedia</Name>
-  <Include>
-   <And>
-    <Category>AudioVideo</Category>
-   </And>
-  </Include>
+  <Name>wine-wine</Name>
+  <Deleted/>
  </Menu>
- <!-- End Multimedia -->
- <!-- Office -->
+ <Menu>
+  <Name>Applications</Name>
+  <Exclude>
+   <Filename>gitbook-editor.desktop</Filename>
+   <Filename>discoverystudio.desktop</Filename>
+  </Exclude>
+  <Layout/>
+ </Menu>
  <Menu>
   <Name>Office</Name>
-  <Include>
-   <And>
-    <Category>Office</Category>
-   </And>
-  </Include>
-  <Exclude>
-   <Category>GNOME</Category>
-   <Category>Viewer</Category>
-   <Filename>kmail_view.desktop</Filename>
-   <Filename>kmailservice5.desktop</Filename>
-   <Filename>org.kde.kmail.desktop</Filename>
-   <Filename>org.kde.headerthemeeditor.desktop</Filename>
-   <Filename>libreoffice-base.desktop</Filename>
-   <Filename>libreoffice-calc.desktop</Filename>
-   <Filename>libreoffice-draw.desktop</Filename>
-   <Filename>libreoffice-impress.desktop</Filename>
-   <Filename>libreoffice-math.desktop</Filename>
-   <Filename>libreoffice-startcenter.desktop</Filename>
-   <Filename>libreoffice-writer.desktop</Filename>
-   <Filename>libreoffice-xsltfilter.desktop</Filename>
-  </Exclude>
+  <Layout>
+   <Merge type="menus"/>
+   <Menuname>Document Viewers</Menuname>
+   <Menuname>LibreOffice</Menuname>
+   <Merge type="files"/>
+   <Filename>org.gnome.Calendar.desktop</Filename>
+   <Filename>org.kde.storageservicemanager.desktop</Filename>
+   <Filename>org.kde.contactprintthemeeditor.desktop</Filename>
+   <Filename>org.kde.contactthemeeditor.desktop</Filename>
+   <Filename>xfce4-dict.desktop</Filename>
+   <Filename>evolution.desktop</Filename>
+   <Filename>focuswriter.desktop</Filename>
+   <Filename>org.kde.kaddressbook.desktop</Filename>
+   <Filename>org.kde.kontact.desktop</Filename>
+   <Filename>org.kde.korganizer.desktop</Filename>
+   <Filename>org.kde.ktnef.desktop</Filename>
+   <Filename>org.gnome.latexila.desktop</Filename>
+   <Filename>org.kde.lokalize.desktop</Filename>
+   <Filename>xfcalendar.desktop</Filename>
+   <Filename>globaltime.desktop</Filename>
+   <Filename>org.kde.pimsettingexporter.desktop</Filename>
+   <Filename>org.kde.sieveeditor.desktop</Filename>
+   <Filename>zotero.desktop</Filename>
+   <Separator/>
+   <Menuname>More</Menuname>
+  </Layout>
   <Menu>
    <Name>Document Viewers</Name>
-   <Directory>Document_Viewers.directory</Directory>
+   <Layout>
+    <Merge type="files"/>
+    <Filename>evince.desktop</Filename>
+    <Filename>kde4-okular.desktop</Filename>
+   </Layout>
+   <Directory>Document Viewers.directory</Directory>
    <Include>
-    <And>
-     <Category>Viewer</Category>
-     <Category>Office</Category>
-    </And>
+    <Filename>evince.desktop</Filename>
+    <Filename>kde4-okular.desktop</Filename>
    </Include>
   </Menu>
   <Menu>
    <Name>LibreOffice</Name>
+   <Layout>
+    <Merge type="files"/>
+    <Filename>libreoffice-base.desktop</Filename>
+    <Filename>libreoffice-calc.desktop</Filename>
+    <Filename>libreoffice-draw.desktop</Filename>
+    <Filename>libreoffice-impress.desktop</Filename>
+    <Filename>libreoffice-math.desktop</Filename>
+    <Filename>libreoffice-startcenter.desktop</Filename>
+    <Filename>libreoffice-writer.desktop</Filename>
+   </Layout>
    <Directory>LibreOffice.directory</Directory>
    <Include>
     <Filename>libreoffice-base.desktop</Filename>
@@ -197,153 +1108,113 @@
     <Filename>libreoffice-math.desktop</Filename>
     <Filename>libreoffice-startcenter.desktop</Filename>
     <Filename>libreoffice-writer.desktop</Filename>
-    <Filename>libreoffice-xsltfilter.desktop</Filename>
    </Include>
   </Menu>
- </Menu>
- <!-- End Office -->
- <!-- Terminal Emulators-->
- <Menu>
-  <Name>Terminal Emulators</Name>
-  <Directory>Terminal_Emulators.directory</Directory>
-  <Include>
-   <And>
-    <Category>TerminalEmulator</Category>
-   </And>
-  </Include>
- </Menu>
- <!-- Text Editors-->
- <Menu>
-  <Name>Text Editors</Name>
-  <Directory>Text_Editors.directory</Directory>
-  <Include>
-   <Category>TextEditor</Category>
-  </Include>
   <Exclude>
-   <Category>Atom</Category>
-   <Filename>atom.desktop</Filename>
-   <Filename>lighttable.desktop</Filename>
-   <Category>gVim</Category>
-   <Filename>gvim.desktop</Filename>
+   <Filename>org.kde.headerthemeeditor.desktop</Filename>
+   <Filename>org.kde.kmail.desktop</Filename>
+   <Filename>evince.desktop</Filename>
+   <Filename>kde4-okular.desktop</Filename>
+   <Filename>libreoffice-base.desktop</Filename>
+   <Filename>libreoffice-calc.desktop</Filename>
+   <Filename>libreoffice-draw.desktop</Filename>
+   <Filename>libreoffice-impress.desktop</Filename>
+   <Filename>libreoffice-math.desktop</Filename>
+   <Filename>libreoffice-startcenter.desktop</Filename>
+   <Filename>libreoffice-writer.desktop</Filename>
   </Exclude>
  </Menu>
- <!-- System Tools-->
  <Menu>
-  <Name>System</Name>
-  <Include>
-   <And>
-    <Category>System</Category>
-    <Not>
-     <Category>Settings</Category>
-     <Category>PackageManager</Category>
-     <Category>Virtualization</Category>
-     <Category>FileManager</Category>
-     <Category>TerminalEmulator</Category>
-    </Not>
-   </And>
-  </Include>
- </Menu>
- <!-- End System Tools -->
- <Menu>
-  <Name>Utilities</Name>
+  <Name>Settingsmenu</Name>
+  <Layout>
+   <Merge type="files"/>
+   <Filename>gda-control-center-5.0.desktop</Filename>
+   <Filename>elementary_config.desktop</Filename>
+   <Filename>itweb-settings.desktop</Filename>
+   <Filename>onboard-settings.desktop</Filename>
+   <Filename>thunar-volman-settings.desktop</Filename>
+   <Filename>tracker-preferences.desktop</Filename>
+   <Filename>systemsettings.desktop</Filename>
+  </Layout>
   <Exclude>
-   <Category>Calculator</Category>
-   <Category>Development</Category>
-   <Category>FileManager</Category>
-   <Category>GNOME</Category>
-   <Category>GTK</Category>
-   <Category>TerminalEmulator</Category>
-   <Category>TextEditor</Category>
+   <Filename>thunar-settings.desktop</Filename>
   </Exclude>
  </Menu>
- <!-- Virtualization Software-->
  <Menu>
-  <Name>Virtualization Software</Name>
-  <Directory>Virtualization.directory</Directory>
-  <Include>
-   <And>
-    <Category>Virtualization</Category>
-   </And>
-  </Include>
+  <Name>Education</Name>
+  <Menu>
+   <Name>Science</Name>
+   <Include>
+    <Filename>discoverystudio.desktop</Filename>
+    <Filename>kde4-kalzium.desktop</Filename>
+    <Filename>encifer.desktop</Filename>
+   </Include>
+   <Exclude>
+    <Filename>www.octave.org-octave.desktop</Filename>
+    <Filename>libreoffice-math.desktop</Filename>
+    <Filename>org.kde.cantor.desktop</Filename>
+    <Filename>org.kde.rocs.desktop</Filename>
+    <Filename>org.kde.kalgebra.desktop</Filename>
+    <Filename>kalgebramobile.desktop</Filename>
+   </Exclude>
+   <Layout>
+    <Merge type="files"/>
+    <Filename>avogadro.desktop</Filename>
+    <Filename>discoverystudio.desktop</Filename>
+    <Filename>discoverystudio-optirun.desktop</Filename>
+    <Filename>encifer.desktop</Filename>
+    <Filename>kde4-kalzium.desktop</Filename>
+    <Filename>marble.desktop</Filename>
+    <Filename>org.kde.kstars.desktop</Filename>
+    <Filename>MarvinSketch-16.4.25.0.desktop</Filename>
+    <Filename>MarvinSpace-16.4.25.0.desktop</Filename>
+    <Filename>MarvinView-16.4.25.0.desktop</Filename>
+    <Filename>Structure Checker-16.4.25.0.desktop</Filename>
+   </Layout>
+  </Menu>
+  <Menu>
+   <Name>Mathematics</Name>
+   <Include>
+    <Filename>gnome-calculator.desktop</Filename>
+    <Filename>org.kde.kcalc.desktop</Filename>
+   </Include>
+   <Exclude>
+    <Filename>org.kde.cantor.desktop</Filename>
+   </Exclude>
+   <Layout>
+    <Merge type="files"/>
+    <Filename>www.octave.org-octave.desktop</Filename>
+    <Filename>org.kde.kalgebra.desktop</Filename>
+    <Filename>kalgebramobile.desktop</Filename>
+    <Filename>org.kde.kbruch.desktop</Filename>
+    <Filename>org.kde.kig.desktop</Filename>
+    <Filename>org.kde.kmplot.desktop</Filename>
+    <Filename>libreoffice-math.desktop</Filename>
+    <Filename>org.kde.rocs.desktop</Filename>
+    <Filename>gnome-calculator.desktop</Filename>
+    <Filename>org.kde.kcalc.desktop</Filename>
+   </Layout>
+  </Menu>
  </Menu>
- <!-- End Settings -->
  <Menu>
   <Name>Science</Name>
   <Deleted/>
  </Menu>
- <Menu>
-  <Name>Arch Linux</Name>
-  <Directory>Arch_Linux.directory</Directory>
-  <Layout>
-   <Merge type="files"/>
-   <Filename>Arch-AUR.desktop</Filename>
-   <Filename>Arch-Bugs.desktop</Filename>
-   <Filename>Arch-Developers.desktop</Filename>
-   <Filename>Arch-Documentation.desktop</Filename>
-   <Filename>Arch-Donate.desktop</Filename>
-   <Filename>Arch-Forum.desktop</Filename>
-   <Filename>Arch-Homepage.desktop</Filename>
-   <Filename>Arch-Schwag.desktop</Filename>
-   <Filename>Arch-SVN.desktop</Filename>
-   <Filename>Arch-Wiki.desktop</Filename>
-  </Layout>
-  <Include>
-   <Filename>Arch-AUR.desktop</Filename>
-   <Filename>Arch-Bugs.desktop</Filename>
-   <Filename>Arch-Developers.desktop</Filename>
-   <Filename>Arch-Documentation.desktop</Filename>
-   <Filename>Arch-Donate.desktop</Filename>
-   <Filename>Arch-Forum.desktop</Filename>
-   <Filename>Arch-Homepage.desktop</Filename>
-   <Filename>Arch-SVN.desktop</Filename>
-   <Filename>Arch-Schwag.desktop</Filename>
-   <Filename>Arch-Wiki.desktop</Filename>
-  </Include>
-  <Deleted/>
- </Menu>
- <Menu>
-  <Name>.hidden</Name>
-  <Include>
-   <Filename>Terminal-Konsole (Zsh).desktop</Filename>
-   <Filename>sage-notebook.desktop</Filename>
-  </Include>
- </Menu>
- <Menu>
-  <Name>Applications</Name>
-  <Exclude>
-   <Filename>Arch-AUR.desktop</Filename>
-   <Filename>Arch-Bugs.desktop</Filename>
-   <Filename>Arch-Developers.desktop</Filename>
-   <Filename>Arch-Documentation.desktop</Filename>
-   <Filename>Arch-Donate.desktop</Filename>
-   <Filename>Arch-Forum.desktop</Filename>
-   <Filename>Arch-Homepage.desktop</Filename>
-   <Filename>Arch-SVN.desktop</Filename>
-   <Filename>Arch-Schwag.desktop</Filename>
-   <Filename>Arch-Wiki.desktop</Filename>
-  </Exclude>
-  <Deleted/>
- </Menu>
  <Layout>
   <Merge type="menus"/>
-  <Menuname>Atom</Menuname>
   <Menuname>Development</Menuname>
   <Menuname>Education</Menuname>
-  <Menuname>File Managers</Menuname>
   <Menuname>Games</Menuname>
   <Menuname>Graphics</Menuname>
-  <Menuname>gVim</Menuname>
   <Menuname>Internet</Menuname>
   <Menuname>Multimedia</Menuname>
   <Menuname>Office</Menuname>
   <Menuname>Settingsmenu</Menuname>
   <Menuname>System</Menuname>
-  <Menuname>Terminal Emulators</Menuname>
-  <Menuname>Text Editors</Menuname>
   <Menuname>Utilities</Menuname>
-  <Menuname>Virtualization Software</Menuname>
+  <Menuname>Applications</Menuname>
   <Merge type="files"/>
-  <Filename>kde4-Help.desktop</Filename>
+  <Filename>kde4-kfind.desktop</Filename>
+  <Filename>org.kde.Help.desktop</Filename>
  </Layout>
 </Menu>
-<!-- End Applications -->

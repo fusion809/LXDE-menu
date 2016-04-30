@@ -1,0 +1,7 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Type=Application
+Name=MarvinSpace-16.4.25.0
+Exec=/bin/sh "/home/fusion809/ChemAxon/MarvinBeans/MarvinSpace" 
+Icon=/home/fusion809/ChemAxon/MarvinBeans/.install4j/MarvinSpace.png
+Categories=Education;Science;Chemistry;

@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Messenger
+Icon=messengerfordesktop
+Exec=messengerfordesktop
+Type=Application
+Categories=Social;Network;

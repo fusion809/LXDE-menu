@@ -29,5 +29,5 @@ Exec=/home/fusion809/runescape/rsu/rsu-query rsu.download.client
 Categories=GNOME;GTK;Game;
 
 # Display property
-NoDisplay=false
+NoDisplay=true
 

@@ -20,13 +20,12 @@
 		<Include>
 			<And>
 				<Category>Utility</Category>
-				<Not>
-          <Category>Accessibility</Category>
-          <Category>System</Category>
-          <Category>TextEditor</Category>
-          <Category>FileManager</Category>
-          <Category>TerminalEmulator</Category>
-        </Not>
+	<!-- Accessibility spec must have either the Utility or Settings
+			 category, and we display an accessibility submenu already for
+			 the ones that do not have Settings, so don't display accessibility
+			 applications here -->
+				<Not><Category>Accessibility</Category></Not>
+				<Not><Category>System</Category></Not>
 			</And>
 		</Include>
 	</Menu> <!-- End Accessories -->
@@ -50,7 +49,6 @@
 		<Include>
 			<And>
 				<Category>Development</Category>
-        <Not><Category>TextEditor</Category></Not>
 			</And>
 			<Filename>emacs.desktop</Filename>
 		</Include>
@@ -61,25 +59,11 @@
 		<Name>Education</Name>
 		<Directory>lxde-education.directory</Directory>
 		<Include>
-			<Or>
+			<And>
 				<Category>Education</Category>
-        <Category>Science</Category>
-        <Category>Math</Category>
-        <Category>Physics</Category>
-			</Or>
+			</And>
 		</Include>
 	</Menu> <!-- End Education -->
-
-  <!-- File Managers-->
-  <Menu>
-    <Name>File Managers</Name>
-    <Directory>lxde-filemanager.directory</Directory>
-    <Include>
-      <And>
-        <Category>FileManager</Category>
-      </And>
-    </Include>
-  </Menu>
 
 	<!-- Games -->
 	<Menu>
@@ -111,18 +95,8 @@
 		<Include>
 			<And>
 				<Category>Network</Category>
-        <Not>
-          <Category>P2P</Category>
-        </Not>
 			</And>
 		</Include>
-    <SubMenu>
-      <Name>P2P Filetransfer</Name>
-      <Directory>lxde-p2p.directory</Directory>
-      <Include>
-        <Category>P2P</Category>
-      </Include>
-    </SubMenu>
 	</Menu>	 <!-- End Internet -->
 
 	<!-- Multimedia -->
@@ -147,40 +121,6 @@
 		</Include>
 	</Menu> <!-- End Office -->
 
-  <!-- Terminal Emulators-->
-  <Menu>
-    <Name>Terminal Emulators</Name>
-    <Directory>lxde-terminalemulator.directory</Directory>
-    <Include>
-      <And>
-        <Category>TerminalEmulator</Category>
-      </And>
-    </Include>
-  </Menu>
-
-  <!-- Sabayon Weblinks-->
-  <!-- This currently doesn't work-->
-  <Menu>
-    <Name>Sabayon Weblinks</Name>
-    <Directory>sabayon-sabayon.directory</Directory>
-    <Include>
-      <And>
-        <Category>Sabayon</Category>
-      </And>
-    </Include>
-  </Menu>
-
-  <!-- Text Editors-->
-  <Menu>
-    <Name>Text Editors</Name>
-    <Directory>lxde-texteditor.directory</Directory>
-    <Include>
-      <And>
-        <Category>TextEditor</Category>
-      </And>
-    </Include>
-  </Menu>
-
 	<!-- System Tools-->
 	<Menu>
 		<Name>System</Name>
@@ -188,27 +128,11 @@
 		<Include>
 			<And>
 				<Category>System</Category>
-				<Not>
-          <Category>Settings</Category>
-          <Category>PackageManager</Category>
-          <Category>Virtualization</Category>
-          <Category>FileManager</Category>
-          <Category>TerminalEmulator</Category>
-        </Not>
+				<Not><Category>Settings</Category></Not>
+				<Not><Category>PackageManager</Category></Not>
 			</And>
 		</Include>
 	</Menu>	 <!-- End System Tools -->
-
-  <!-- Virtualization Software-->
-  <Menu>
-    <Name>Virtualization Software</Name>
-    <Directory>lxde-virtualization.directory</Directory>
-    <Include>
-      <And>
-        <Category>Virtualization</Category>
-      </And>
-    </Include>
-  </Menu>
 
 	<!-- Other -->
 	<Menu>
@@ -217,12 +141,9 @@
 		<OnlyUnallocated/>
 		<Include>
 			<And>
-				<Not>
-          <Category>Core</Category>
-          <Category>Settings</Category>
-          <Category>Screensaver</Category>
-          <Category>Sabayon</Category>
-        </Not>
+				<Not><Category>Core</Category></Not>
+				<Not><Category>Settings</Category></Not>
+				<Not><Category>Screensaver</Category></Not>
 			</And>
 		</Include>
 		</Menu> <!-- End Other -->

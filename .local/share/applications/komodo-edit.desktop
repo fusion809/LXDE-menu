@@ -1,0 +1,17 @@
+[Desktop Entry]
+Categories=ActiveState;Application;Development;Editor;Utility;TextEditor;
+Comment=Free multi-platform editor that makes it easy to write quality code.
+Encoding=UTF-8
+Exec=/opt/komodo-edit/lib/mozilla/komodo %F
+GenericName=
+Icon=/opt/komodo-edit/share/icons/komodo48.png
+MimeType=text/plain;
+Name=Komodo Edit 9
+NoDisplay=false
+Path[$e]=
+StartupNotify=true
+Terminal=0
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=

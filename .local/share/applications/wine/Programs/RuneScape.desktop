@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=RuneScape
+Exec=env WINEPREFIX="/home/fusion809/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/fusion809/.wine/dosdevices/c:/users/fusion809/Start\\ Menu/Programs/RuneScape.lnk
+Type=Application
+StartupNotify=true
+Path=/home/fusion809/.wine/dosdevices/c:/jagexlauncher/jagexlauncher/bin/
+Icon=3409_launcher.0

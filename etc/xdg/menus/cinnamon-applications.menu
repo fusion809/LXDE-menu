@@ -1,268 +1,207 @@
-<!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.1//EN"
- "http://www.freedesktop.org/standards/menu-spec/1.1/menu.dtd">
+<!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN"
+ "http://www.freedesktop.org/standards/menu-spec/1.0/menu.dtd">
 
 <Menu>
 
-	<Name>Applications</Name>
-	<Directory>cinnamon-menu-applications.directory</Directory>
+  <Name>Applications</Name>
+  <Directory>cinnamon-menu-applications.directory</Directory>
 
-	<!-- Read standard .directory and .desktop file locations -->
-	<DefaultAppDirs/>
-	<DefaultDirectoryDirs/>
+  <!-- Scan legacy dirs first, as later items take priority -->
+  <KDELegacyDirs/>
+  <LegacyDir>/etc/X11/applnk</LegacyDir>
+  <LegacyDir>/usr/share/cinnamon/apps</LegacyDir>
 
-	<!-- Read in overrides and child menus from applications-merged/ -->
-	<DefaultMergeDirs/>
+  <!-- Read standard .directory and .desktop file locations -->
+  <DefaultAppDirs/>
+  <DefaultDirectoryDirs/>
 
-	<!-- Accessories submenu -->
-	<Menu>
-		<Name>Accessories</Name>
-		<Directory>cinnamon-utility.directory</Directory>
-		<Include>
-      <Or>
+  <!-- Read in overrides and child menus from applications-merged/ -->
+  <DefaultMergeDirs/>
+
+  <!-- Accessories submenu -->
+  <Menu>
+    <Name>Accessories</Name>
+    <Directory>cinnamon-utility.directory</Directory>
+    <Include>
+      <And>
         <Category>Utility</Category>
+	<!-- Accessibility spec must have either the Utility or Settings
+	     category, and we display an accessibility submenu already for
+	     the ones that do not have Settings, so don't display accessibility
+	     applications here -->
+        <Not><Category>Accessibility</Category></Not>
+        <Not><Category>System</Category></Not>
+      </And>
+    </Include>
+  </Menu> <!-- End Accessories -->
+
+  <!-- Accessibility submenu -->
+  <Menu>
+    <Name>Universal Access</Name>
+    <Directory>cinnamon-utility-accessibility.directory</Directory>
+    <Include>
+      <And>
         <Category>Accessibility</Category>
-      </Or>
-			<And>
-				<Not>
-          <Category>AudioVideo</Category>
-          <Category>Calculator</Category>
-          <Category>Development</Category>
-          <Category>Game</Category>
-          <Category>Graphics</Category>
-          <Category>Screenshooter</Category>
-          <Category>Settings</Category>
-          <Category>System</Category>
-          <Category>TextEditor</Category>
-          <Category>FileManager</Category>
-          <Category>TerminalEmulator</Category>
-          <Filename>nemo.desktop</Filename>
-        </Not>
-			</And>
-		</Include>
-	</Menu> <!-- End Accessories -->
-
-	<!-- Development Tools -->
-	<Menu>
-		<Name>Development</Name>
-		<Directory>cinnamon-development.directory</Directory>
-		<Include>
-			<And>
-				<Category>Development</Category>
-        <Not>
-          <Category>TextEditor</Category>
-          <Category>IDE</Category>
-          <Filename>netbeans.desktop</Filename>
-          <Filename>ninja-ide.desktop</Filename>
-          <Category>Python</Category>
-          <Category>Science</Category>
-        </Not>
-			</And>
-			<Filename>emacs.desktop</Filename>
-		</Include>
-	</Menu> <!-- End Development Tools -->
-
-	<!-- Education -->
-	<Menu>
-		<Name>Education</Name>
-		<Directory>cinnamon-education.directory</Directory>
-		<Include>
-			<Or>
-        <Category>Calculator</Category>
-				<Category>Education</Category>
-        <Category>Science</Category>
-        <Category>Math</Category>
-        <Category>Physics</Category>
-			</Or>
-		</Include>
-	</Menu> <!-- End Education -->
-
-  <!-- File Managers-->
-  <Menu>
-    <Name>File Managers</Name>
-    <Directory>lxde-filemanager.directory</Directory>
-    <Include>
-      <And>
-        <Category>FileManager</Category>
+        <Not><Category>Settings</Category></Not>
       </And>
-      <Filename>nemo.desktop</Filename>
     </Include>
-  </Menu>
+  </Menu> <!-- End Accessibility -->
 
-	<!-- Games -->
-	<Menu>
-		<Name>Games</Name>
-		<Directory>cinnamon-game.directory</Directory>
-		<Include>
-			<And>
-				<Category>Game</Category>
-			</And>
-		</Include>
-	</Menu> <!-- End Games -->
-
-	<!-- Graphics -->
-	<Menu>
-		<Name>Graphics</Name>
-		<Directory>xfce-graphics.directory</Directory>
-		<Include>
-			<And>
-				<Category>Graphics</Category>
-			</And>
-		</Include>
-	</Menu> <!-- End Graphics -->
-
+  <!-- Development Tools -->
   <Menu>
-    <Name>Integrated Development Environments</Name>
-    <Directory>xfce-ide.directory</Directory>
+    <Name>Development</Name>
+    <Directory>cinnamon-development.directory</Directory>
     <Include>
       <And>
-        <Category>IDE</Category>
+        <Category>Development</Category>
       </And>
-      <Filename>netbeans.desktop</Filename>
-      <Filename>ninja-ide.desktop</Filename>
+      <Filename>emacs.desktop</Filename>
     </Include>
-  </Menu>
+  </Menu> <!-- End Development Tools -->
 
-	<!-- Internet -->
-	<Menu>
-		<Name>Internet</Name>
-		<Directory>cinnamon-network.directory</Directory>
-		<Include>
-			<And>
-				<Category>Network</Category>
-        <Not>
-          <Category>P2P</Category>
-        </Not>
-			</And>
-		</Include>
-	</Menu>	 <!-- End Internet -->
-
-	<!-- Multimedia -->
-	<Menu>
-		<Name>Multimedia</Name>
-		<Directory>cinnamon-audio-video.directory</Directory>
-		<Include>
-			<And>
-				<Category>AudioVideo</Category>
-			</And>
-		</Include>
-	</Menu>	 <!-- End Multimedia -->
-
-	<!-- Office -->
-	<Menu>
-		<Name>Office</Name>
-		<Directory>xfce-office.directory</Directory>
-		<Include>
-			<And>
-				<Category>Office</Category>
-			</And>
-		</Include>
-	</Menu> <!-- End Office -->
-
-  <!-- Terminal Emulators-->
+  <!-- Education -->
   <Menu>
-    <Name>Terminal Emulators</Name>
-    <Directory>lxde-terminalemulator.directory</Directory>
+    <Name>Education</Name>
+    <Directory>cinnamon-education.directory</Directory>
     <Include>
       <And>
-        <Category>TerminalEmulator</Category>
+        <Category>Education</Category>
+      </And>
+    </Include>
+  </Menu> <!-- End Education -->
+
+  <!-- Games -->
+  <Menu>
+    <Name>Games</Name>
+    <Directory>cinnamon-game.directory</Directory>
+    <Include>
+      <And>
+        <Category>Game</Category>
+      </And>
+    </Include>
+  </Menu> <!-- End Games -->
+
+  <!-- Graphics -->
+  <Menu>
+    <Name>Graphics</Name>
+    <Directory>cinnamon-graphics.directory</Directory>
+    <Include>
+      <And>
+        <Category>Graphics</Category>
+      </And>
+    </Include>
+  </Menu> <!-- End Graphics -->
+
+  <!-- Internet -->
+  <Menu>
+    <Name>Internet</Name>
+    <Directory>cinnamon-network.directory</Directory>
+    <Include>
+      <And>
+        <Category>Network</Category>
+      </And>
+    </Include>
+  </Menu>   <!-- End Internet -->
+
+  <!-- Multimedia -->
+  <Menu>
+    <Name>Multimedia</Name>
+    <Directory>cinnamon-audio-video.directory</Directory>
+    <Include>
+      <And>
+        <Category>AudioVideo</Category>
+      </And>
+    </Include>
+  </Menu>   <!-- End Multimedia -->
+
+  <!-- Office -->
+  <Menu>
+    <Name>Office</Name>
+    <Directory>cinnamon-office.directory</Directory>
+    <Include>
+      <And>
+        <Category>Office</Category>
+      </And>
+    </Include>
+  </Menu> <!-- End Office -->
+
+  <!-- System Tools-->
+  <Menu>
+    <Name>System</Name>
+    <Directory>cinnamon-system-tools.directory</Directory>    
+  </Menu>   <!-- End System Tools -->
+
+  <!-- Other -->
+  <Menu>
+    <Name>Other</Name>
+    <Directory>cinnamon-other.directory</Directory>
+    <OnlyUnallocated/>
+    <Include>
+      <And>
+        <Not><Category>Core</Category></Not>
+        <Not><Category>Settings</Category></Not>
+        <Not><Category>Screensaver</Category></Not>
+      </And>
+    </Include>
+  </Menu> <!-- End Other -->
+
+ <!-- Wine -->
+  <Menu>
+    <Name>wine-wine</Name>
+    <Directory>wine-wine.directory</Directory>
+    <Include>
+      <And>
+        <Category>Wine</Category>
+      </And>
+    </Include>
+  </Menu> <!-- End Wine -->
+
+  <Menu>
+    <Name>Preferences</Name>
+    <Directory>cinnamon-settings.directory</Directory>
+    <Include>
+      <And>
+        <Category>Settings</Category>
+        <Not><Category>System</Category></Not>
       </And>
     </Include>
   </Menu>
 
-  <!-- Sabayon Weblinks-->
-  <!-- This currently doesn't work-->
+  <!-- System Settings -->
   <Menu>
-    <Name>Sabayon Weblinks</Name>
-    <Directory>sabayon-sabayon.directory</Directory>
+    <Name>Administration</Name>
+    <Directory>cinnamon-settings-system.directory</Directory>
     <Include>
       <And>
-        <Category>Sabayon</Category>
+        <Category>Settings</Category>
+        <Category>System</Category>
       </And>
     </Include>
-  </Menu>
-
-  <!-- Text Editors-->
-  <Menu>
-    <Name>Text Editors</Name>
-    <Directory>xfce-texteditor.directory</Directory>
     <Include>
       <And>
-        <Category>TextEditor</Category>
+        <Category>System</Category>
+        <Not><Category>Settings</Category></Not>
       </And>
     </Include>
-  </Menu>
+  </Menu>     <!-- End System Settings -->
 
-	<!-- System Tools-->
-	<Menu>
-		<Name>System</Name>
-		<Directory>xfce-system.directory</Directory>
-		<Include>
-			<And>
-				<Category>System</Category>
-				<Not>
-          <Category>Settings</Category>
-          <Category>PackageManager</Category>
-          <Category>Virtualization</Category>
-          <Category>FileManager</Category>
-          <Category>TerminalEmulator</Category>
-          <Filename>virtualbox.desktop</Filename>
-        </Not>
-			</And>
-		</Include>
-	</Menu>	 <!-- End System Tools -->
+  <Layout>
+	<Merge type="menus"/>
+	<Menuname>Accessories</Menuname>
+	<Menuname>Education</Menuname>
+	<Menuname>Games</Menuname>
+	<Menuname>Graphics</Menuname>
+	<Menuname>Internet</Menuname>
+	<Menuname>Office</Menuname>
+	<Menuname>Other</Menuname>
+	<Menuname>Development</Menuname>
+	<Menuname>Multimedia</Menuname>
+	<Menuname>System</Menuname>
+	<Menuname>Universal Access</Menuname>
+	<Menuname>wine-wine</Menuname>
+	<Menuname>Preferences</Menuname>
+	<Menuname>Administration</Menuname>
+	<Merge type="files"/>
+  </Layout>
 
-  <!-- Virtualization Software-->
-  <Menu>
-    <Name>Virtualization Software</Name>
-    <Directory>xfce-virtualization.directory</Directory>
-    <Include>
-      <Or>
-        <Category>Virtualization</Category>
-        <Filename>virtualbox.desktop</Filename>
-      </Or>
-    </Include>
-  </Menu>
-
-	<!-- Other -->
-	<Menu>
-		<Name>Other</Name>
-		<Directory>xfce-other.directory</Directory>
-		<OnlyUnallocated/>
-		<Include>
-			<And>
-				<Not>
-          <Category>Core</Category>
-          <Category>Settings</Category>
-          <Category>Screensaver</Category>
-          <Category>Sabayon</Category>
-        </Not>
-			</And>
-		</Include>
-		</Menu> <!-- End Other -->
-
-	<Menu>
-		<Name>DesktopSettings</Name>
-		<Directory>xfce-settings.directory</Directory>
-		<OnlyUnallocated/>
-		<Include>
-			<Or>
-				<Category>Settings</Category>
-				<Category>PackageManager</Category>
-				<Category>System</Category>
-			</Or>
-		</Include>
-		<Layout>
-			<Merge type="menus"/>
-			<Merge type="files"/>
-		</Layout>
-
-	</Menu> <!-- End Settings -->
-
-	<Layout>
-		<Merge type="files"/>
-		<Merge type="menus"/>
-		<Separator/>
-		<Menuname>DesktopSettings</Menuname>
-	</Layout>
-
-</Menu> <!-- End Applications -->
+</Menu>  <!-- End Applications -->

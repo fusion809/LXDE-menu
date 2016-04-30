@@ -29,5 +29,5 @@ Exec=/home/fusion809/runescape/runescape --prmfile=oldschool.prm
 Categories=GNOME;GTK;Game;
 
 # Display property
-NoDisplay=false
+NoDisplay=true
 

@@ -1,0 +1,20 @@
+[Desktop Entry]
+Categories=Game;
+Comment=RuneScape - A Free MMORPG from Jagex Ltd.
+Exec=optirun runescape-launcher
+GenericName[en_GB]=
+GenericName=
+Icon=runescape
+MimeType=
+Name=RuneScape Launcher (Optirun)
+NoDisplay=false
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+Version=1.0
+X-DBUS-ServiceName=
+X-DBUS-StartupType=
+X-KDE-SubstituteUID=false
+X-KDE-Username=

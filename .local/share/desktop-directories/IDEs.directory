@@ -1,4 +1,5 @@
 [Desktop Entry]
+Comment=
+GenericName=
+Icon=applications-development
 Name=IDEs
-Type=Directory
-Icon=package_development_design
