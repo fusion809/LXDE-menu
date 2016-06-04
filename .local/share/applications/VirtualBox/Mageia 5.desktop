@@ -1,9 +1,0 @@
-[Desktop Entry]
-Encoding=UTF-8
-Version=1.0
-Name=Mageia 5
-Comment=Starts the VirtualBox machine Mageia 5
-Type=Application
-Exec=/usr/lib/virtualbox/VirtualBox --comment "Mageia 5" --startvm "586d5f6d-a56e-4b2a-85ce-dd07bf14e43d"
-Icon=Mageia.png
-Categories=System;Emulation;Virtualization;

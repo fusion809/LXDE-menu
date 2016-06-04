@@ -1,9 +1,0 @@
-[Desktop Entry]
-Encoding=UTF-8
-Version=1.0
-Name=Fedora Rawhide
-Comment=Starts the VirtualBox machine Fedora Rawhide
-Type=Application
-Exec=/usr/lib/virtualbox/VirtualBox --comment "Fedora Rawhide" --startvm "102a3bf7-7ed5-446b-9724-612362548ef6"
-Icon=/home/fusion809/.local/share/icons/Fedora.png
-Categories=System;Emulation;Virtualization;

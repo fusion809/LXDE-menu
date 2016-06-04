@@ -1,0 +1,29 @@
+[Desktop Entry]
+Categories=GNOME;GTK;Game;
+Comment[en_GB]=The RuneScape Unix Client
+Comment=The RuneScape Unix Client
+Exec=/opt/runescape/runescape %U
+Icon=/opt/runescape/share/img/runescape.png
+MimeType=
+Name=RuneScape Unix Client
+NoDisplay=false
+Path[$e]=
+StartupNotify=true
+Terminal=0
+TerminalOptions=
+Type=Application
+Version=1.0
+X-Ayatana-Desktop-Shortcuts=Oldschool;UpdateClient;
+X-DBUS-ServiceName=
+X-DBUS-StartupType=
+X-KDE-SubstituteUID=false
+X-KDE-Username=
+
+[Oldschool Shortcut Group]
+Exec=runescape --prmfile=oldschool.prm
+Name=OldSchool RuneScape
+
+[UpdateClient Shortcut Group]
+Exec=rsu/rsu-query rsu.download.client
+Name=Update Runescape Client
+Terminal=true

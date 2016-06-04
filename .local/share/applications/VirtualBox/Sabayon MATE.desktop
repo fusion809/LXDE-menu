@@ -1,9 +1,0 @@
-[Desktop Entry]
-Encoding=UTF-8
-Version=1.0
-Name=Sabayon MATE
-Comment=Starts the VirtualBox machine Sabayon MATE
-Type=Application
-Exec=/usr/lib/virtualbox/VirtualBox --comment "Sabayon MATE" --startvm "95c27d3f-00bc-49d4-975f-ba4a8edb8f86"
-Icon=Sabayon.png
-Categories=System;Emulation;Virtualization;

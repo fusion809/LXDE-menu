@@ -1,9 +1,0 @@
-[Desktop Entry]
-Encoding=UTF-8
-Version=1.0
-Name=Debian 8.2
-Comment=Starts the VirtualBox machine Debian 8.2
-Type=Application
-Exec=/usr/lib/virtualbox/VirtualBox --comment "Debian 8.2" --startvm "c9ba7f99-6ebd-4361-862f-4eaca3442cce"
-Icon=/home/fusion809/.local/share/icons/Debian.png
-Categories=System;Emulation;Virtualization;

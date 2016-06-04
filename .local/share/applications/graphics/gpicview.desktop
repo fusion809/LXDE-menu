@@ -1,0 +1,18 @@
+[Desktop Entry]
+Categories=Graphics;Core;GTK;Viewer;RasterGraphics;2DGraphics;Photography;
+Comment=View your images easily
+Encoding=UTF-8
+Exec=gpicview %f
+GenericName[en_GB]=Image Viewer
+GenericName=Image Viewer
+Icon=gpicview
+MimeType=image/bmp;image/gif;image/jpeg;image/jpg;image/png;image/tiff;image/x-bmp;image/x-pcx;image/x-tga;image/x-portable-pixmap;image/x-portable-bitmap;image/x-targa;image/x-portable-greymap;application/pcx;image/svg+xml;image/svg-xml;
+Name=GPicView
+NoDisplay=false
+Path[$e]=
+StartupNotify=true
+Terminal=0
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=

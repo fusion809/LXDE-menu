@@ -1,9 +1,0 @@
-[Desktop Entry]
-Encoding=UTF-8
-Version=1.0
-Name=CentOS 7-1511
-Comment=Starts the VirtualBox machine CentOS 7-1511
-Type=Application
-Exec=/usr/lib/virtualbox/VirtualBox --comment "CentOS 7-1511" --startvm "c22586fb-d947-41af-ab6b-e44d726a45f4"
-Icon=CentOS.png
-Categories=System;Emulation;Virtualization;
