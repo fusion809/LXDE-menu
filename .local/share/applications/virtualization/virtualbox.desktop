@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Name=Oracle VM VirtualBox Manager
+Icon=virtualbox
+Exec=/usr/lib/virtualbox/VirtualBox
+StartupNotify=false
+StartupWMClass=VirtualBox
+OnlyShowIn=Unity;
+X-UnityGenerated=true

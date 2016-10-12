@@ -1,0 +1,17 @@
+[Desktop Entry]
+Categories=Qt;TDE;AudioVideo;Player;
+Comment=
+Exec[$e]=kaffeine %U
+GenericName=
+Icon=kaffeine
+MimeType=application/x-ogg;audio/basic;audio/vnd.rn-realaudio;audio/x-aiff;audio/x-mp3;audio/x-mpeg;audio/x-mpegurl;audio/x-ms-wma;audio/x-ogg;audio/x-pn-realaudio;audio/x-pn-realaudio-plugin;audio/x-scpls;audio/x-wav;audio/x-flac;video/x-matroska;audio/x-matroska;video/mpeg;video/msvideo;video/quicktime;video/vnd.rn-realvideo;video/x-avi;video/x-fli;video/x-flic;video/x-ms-asf;video/x-ms-wmv;video/x-msvideo;application/x-mplayer2;application/smil;application/x-kaffeine;audio/x-musepack;audio/x-mod;audio/x-stm;
+Name=Kaffeine
+Path[$e]=
+StartupNotify=true
+Terminal=0
+TerminalOptions=
+Type=Application
+X-DocPath=kaffeine/index.html
+X-TDE-HasTempFileOption=true
+X-TDE-SubstituteUID=false
+X-TDE-Username=

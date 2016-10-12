@@ -1,0 +1,33 @@
+[Desktop Action new-document]
+Exec=gedit --new-document
+Name=Open a New Document
+
+[Desktop Action new-window]
+Exec=gedit --new-window
+Name=Open a New Window
+
+[Desktop Entry]
+Actions=new-window;new-document;
+Categories=GNOME;GTK;Utility;TextEditor;
+Comment=Edit text files
+Exec=gedit %U
+Icon=gedit
+Keywords=Text;Editor;Plaintext;Write;
+Name=gedit
+NoDisplay=false
+Path[$e]=
+StartupNotify=true
+Terminal=0
+TerminalOptions=
+Type=Application
+X-AppStream-Ignore=true
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Component=general
+X-GNOME-Bugzilla-ExtraInfoScript=/usr/share/gedit/gedit-bugreport.sh
+X-GNOME-Bugzilla-Product=gedit
+X-GNOME-Bugzilla-Version=3.20.2
+X-GNOME-DocPath=gedit/gedit.xml
+X-GNOME-FullName=Text Editor
+X-KDE-SubstituteUID=false
+X-KDE-Username=
+X-Ubuntu-Gettext-Domain=gedit

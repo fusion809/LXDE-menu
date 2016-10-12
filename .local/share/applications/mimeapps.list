@@ -1,4 +1,5 @@
 [Added Associations]
+application/vnd.rn-realmedia=vlc.desktop;org.gnome.Totem.desktop;
 image/svg+xml=inkscape.desktop;eog.desktop;gimp.desktop;kde4-kolourpaint.desktop;kde4-kfmclient_html.desktop;org.kde.kate.desktop;org.kde.kwrite.desktop;libreoffice-writer.desktop;kde4-okularApplication_txt.desktop;chromium.desktop;org.gnome.Builder.desktop;firefox.desktop;google-chrome.desktop;epiphany.desktop;atom-beta.desktop;emacs.desktop;gvim.desktop;atom.desktop;org.gnome.gedit.desktop;
 video/mp4=vlc.desktop;mplayer.desktop;org.kde.dragonplayer.desktop;
 video/x-flv=vlc.desktop;mplayer.desktop;org.kde.dragonplayer.desktop;
@@ -11,8 +12,9 @@ application/xml=kwebkitpart.desktop;khtml.desktop;
 text/html=kwebkitpart.desktop;khtml.desktop;
 
 [Default Applications]
+application/vnd.rn-realmedia=vlc.desktop;
 image/svg+xml=inkscape.desktop;
-text/html=userapp-Firefox-JS1EIY.desktop
+text/html=google-chrome.desktop
 video/mp4=vlc.desktop;
 video/x-flv=vlc.desktop;
 video/x-matroska=vlc.desktop;
@@ -20,4 +22,3 @@ video/x-msvideo=vlc.desktop;
 x-scheme-handler/http=google-chrome.desktop
 x-scheme-handler/https=google-chrome.desktop
 x-scheme-handler/jagex-jav=runescape.desktop
-x-scheme-handler/magnet=qBittorrent.desktop

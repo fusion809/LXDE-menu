@@ -1,0 +1,33 @@
+[Desktop Action AboutDialog]
+Exec=pantheon-terminal --about
+Name=About Terminal
+
+[Desktop Action NewRootWindow]
+Exec=pantheon-terminal -e "sudo -s"
+Icon=utilities-terminal
+Name=New Root Tab
+
+[Desktop Action NewWindow]
+Exec=pantheon-terminal
+Icon=utilities-terminal
+Name=New Window
+
+[Desktop Entry]
+Actions=NewWindow;NewRootWindow;AboutDialog;
+Categories=GNOME;GTK;System;TerminalEmulator;
+Comment=Use the command line
+Exec[$e]=pantheon-terminal
+GenericName=
+Icon=utilities-terminal
+Keywords=command;prompt;cmd;commandline;run;
+Name=Pantheon Terminal
+Path[$e]=
+StartupNotify=true
+Terminal=0
+TerminalOptions=
+TryExec=pantheon-terminal
+Type=Application
+X-GNOME-Gettext-Domain=pantheon-terminal
+X-GNOME-UsesNotifications=true
+X-TDE-SubstituteUID=false
+X-TDE-Username=

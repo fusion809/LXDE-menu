@@ -1,0 +1,19 @@
+[Desktop Entry]
+Categories=TDE;Application;AudioVideo;DiscBurning;
+Comment=CD writing program
+Exec[$e]=k3b %U
+GenericName=
+Icon=k3b
+MimeType=application/x-k3b;application/x-iso;application/x-cue
+Name=K3b
+Path[$e]=
+StartupNotify=true
+Terminal=0
+TerminalOptions=
+Type=Application
+X-DCOP-ServiceType=Unique
+X-DocPath=k3b/index.html
+X-TDE-NativeMimeType=application/x-k3b;application/x-iso;application/x-cue
+X-TDE-StartupNotify=true
+X-TDE-SubstituteUID=false
+X-TDE-Username=

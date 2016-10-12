@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Icon=libreoffice-base
+Type=Application
+Categories=Office;LibreOffice;Database;
+Exec=flatpak run org.libreoffice.LibreOffice --base %U
+Name=LibreOffice Base (Fresh)
+MimeType=application/vnd.oasis.opendocument.database;application/vnd.sun.xml.base;

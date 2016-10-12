@@ -1,0 +1,16 @@
+[Desktop Entry]
+Categories=Development;Utilities;TextEditor
+Comment=Code Editor
+Encoding=UTF-8
+Exec=bash /home/fusion809/.codebox/start.sh
+GenericName=
+Icon=/home/fusion809/Programs/Codebox/icon.png
+Name=Codebox
+NoDisplay=false
+Path[$e]=
+StartupNotify=true
+Terminal=0
+TerminalOptions=
+Type=Application
+X-TDE-SubstituteUID=false
+X-TDE-Username=

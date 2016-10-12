@@ -1,0 +1,17 @@
+[Desktop Entry]
+Categories=Qt;TDE;Development;IDE;
+Comment=
+Exec=kdevelop --ps
+GenericName=
+Icon=kdevelop
+MimeType=application/x-kdevelop;
+Name[en_GB]=KDevelop 4 (Pick Session)
+Name=KDevelop 4 (Pick Session)
+NoDisplay=false
+Path[$e]=
+StartupNotify=true
+Terminal=0
+TerminalOptions=
+Type=Application
+X-TDE-SubstituteUID=false
+X-TDE-Username=

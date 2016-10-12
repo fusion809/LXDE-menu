@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Value=1.0
+Type=Application
+Name=Annex - Uninstall
+GenericName=Game uninstaller. Annex v4.0
+Comment=A real time strategy game.
+Icon=/home/fusion809/annex/annex_uninstall.png
+Exec="/home/fusion809/annex/uninstall-annex.sh"
+Categories=Game;StrategyGame
+

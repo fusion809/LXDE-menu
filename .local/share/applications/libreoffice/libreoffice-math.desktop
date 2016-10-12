@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Icon=libreoffice-math
+Type=Application
+Categories=Office;LibreOffice;Spreadsheet;Education;Math;Science;
+Exec=flatpak run org.libreoffice.LibreOffice --math %U
+Name=LibreOffice Math (Fresh)
+MimeType=application/vnd.oasis.opendocument.formula;application/vnd.sun.xml.math;application/vnd.oasis.opendocument.formula-template;text/mathml;application/mathml+xml;

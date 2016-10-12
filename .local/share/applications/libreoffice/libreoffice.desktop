@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Icon=libreoffice-startcenter
+Type=Application
+Categories=Office;LibreOffice;
+Exec=flatpak run org.libreoffice.LibreOffice %U
+Name=LibreOffice (Fresh)

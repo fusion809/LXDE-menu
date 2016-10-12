@@ -1,0 +1,23 @@
+[Desktop Action AboutDialog]
+Exec=audience --about
+Name=About Videos
+
+[Desktop Entry]
+Actions=AboutDialog;
+Categories=AudioVideo;Video;Player;TV;
+Comment=Watch videos and movies
+Exec[$e]=audience %U
+GenericName=
+Icon=multimedia-video-player
+MimeType=application/x-musepack;application/musepack;application/x-ape;application/x-id3;application/ogg;application/x-ogg;application/x-vorbis+ogg;application/x-flac;video/quicktime;video/x-quicktime;application/x-quicktimeplayer;application/smil;application/vnd.rn-realmedia;video/vnd.rn-realvideo;application/asx;video/x-ms-asf-plugin;video/x-msvideo;video/msvideo;application/x-mplayer2;application/x-ms-wmv;video/x-ms-asf;video/x-ms-wm;video/x-ms-wmv;video/x-ms-wmp;video/x-ms-wvx;application/x-drm-v2;video/mpeg;video/x-mpeg;video/x-mpeg2;video/mp4;video/3gpp;video/fli;video/x-fli;video/x-flv;video/vnd.vivo;application/x-nsv-vp3-mp3;video/x-matroska;video/matroska;video/x-mng;video/webm;video/x-webm;video/mp2t;video/vnd.mpegurl;video/x-ogm+ogg;
+Name=Audience
+Path[$e]=
+StartupNotify=true
+Terminal=0
+TerminalOptions=
+Type=Application
+Version=1.0
+X-GNOME-Gettext-Domain=audience
+X-PulseAudio-Properties=media.role=video
+X-TDE-SubstituteUID=false
+X-TDE-Username=

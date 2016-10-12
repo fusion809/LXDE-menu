@@ -1,0 +1,31 @@
+[Desktop Action AboutDialog]
+Exec=pantheon-files --about
+Name=About _Files
+
+[Desktop Action Root]
+Exec=pantheon-files-pkexec
+Name=New Window As _Administrator
+
+[Desktop Action WindowNew]
+Exec=pantheon-files -n
+Name=New _Window
+
+[Desktop Entry]
+Actions=WindowNew;Root;AboutDialog;
+Categories=System;Utility;Core;GTK;FileTools;FileManager;
+Comment=Browse your files
+Exec[$e]=pantheon-files %U
+GenericName=
+Icon=system-file-manager
+Keywords=folder;manager;explore;disk;filesystem;
+MimeType=inode/directory;
+Name=Pantheon Files
+Path[$e]=
+StartupNotify=true
+Terminal=0
+TerminalOptions=
+Type=Application
+X-GNOME-Gettext-Domain=pantheon-files
+X-GNOME-UsesNotifications=true
+X-TDE-SubstituteUID=false
+X-TDE-Username=

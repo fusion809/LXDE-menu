@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Blockify
+Comment=Blocks Spotify commercials
+Exec=blockify
+Icon=blockify
+Type=Application
+Categories=AudioVideo
+Terminal=True

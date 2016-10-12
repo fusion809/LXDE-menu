@@ -1,0 +1,19 @@
+[Desktop Entry]
+Categories=GNOME;GTK;Utility;Core;
+Comment=Access and organize files
+Exec[$e]=nemo %U
+GenericName=
+Icon=folder
+MimeType=inode/directory;application/x-gnome-saved-search;
+Name=Nemo
+Path[$e]=
+StartupNotify=false
+Terminal=0
+TerminalOptions=
+Type=Application
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Component=general
+X-GNOME-Bugzilla-Product=nemo
+X-GNOME-Bugzilla-Version=2.8.6
+X-TDE-SubstituteUID=false
+X-TDE-Username=

@@ -1,0 +1,27 @@
+[Desktop Action Document]
+Exec=notepadqq
+Name=Open a New Document
+OnlyShowIn=Unity;
+
+[Desktop Action Window]
+Exec=notepadqq --new-window
+Name=Open a New Window
+OnlyShowIn=Unity;
+
+[Desktop Entry]
+Actions=Window;Document;
+Categories=Development;Utility;TextEditor;
+Comment=Edit source code files
+Encoding=UTF-8
+Exec[$e]=notepadqq %U
+GenericName=
+Icon=notepadqq
+MimeType=text/plain;text/html;text/x-php;text/x-c;text/x-shellscript;
+Name=Notepadqq
+Path[$e]=
+StartupNotify=false
+Terminal=0
+TerminalOptions=
+Type=Application
+X-TDE-SubstituteUID=false
+X-TDE-Username=

@@ -1,0 +1,49 @@
+[Desktop Action Fullscreen]
+Exec=totem --fullscreen
+Name=Fullscreen
+OnlyShowIn=Unity;
+
+[Desktop Action Mute]
+Exec=totem --mute
+Name=Mute
+OnlyShowIn=Unity;
+
+[Desktop Action Next]
+Exec=totem --next
+Name=Next
+OnlyShowIn=Unity;
+
+[Desktop Action Play]
+Exec=totem --play-pause
+Name=Play/Pause
+OnlyShowIn=Unity;
+
+[Desktop Action Previous]
+Exec=totem --previous
+Name=Previous
+OnlyShowIn=Unity;
+
+[Desktop Entry]
+Actions=Play;Next;Previous;Mute;Fullscreen;
+Categories=GTK;GNOME;AudioVideo;Player;Video;
+Comment=Play movies
+Exec[$e]=totem %U
+GenericName=
+Icon=totem
+Keywords=Video;Movie;Film;Clip;Series;Player;DVD;TV;Disc;
+Name=Totem
+Path[$e]=
+StartupNotify=true
+Terminal=0
+TerminalOptions=
+Type=Application
+X-AppStream-Ignore=true
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Component=general
+X-GNOME-Bugzilla-OtherBinaries=totem-video-thumbnailer;totem-audio-preview;
+X-GNOME-Bugzilla-Product=totem
+X-GNOME-Bugzilla-Version=3.20.1
+X-GNOME-DocPath=totem/totem.xml
+X-TDE-SubstituteUID=false
+X-TDE-Username=
+X-Ubuntu-Gettext-Domain=totem

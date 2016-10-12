@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=ARK: Survival Of The Fittest
+Comment=Play this game on Steam
+Exec=steam steam://rungameid/407530
+Icon=steam
+Terminal=false
+Type=Application
+Categories=Game;

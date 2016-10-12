@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Value=1.0
+Type=Application
+Name=Annex - Conquer the World v4.0
+GenericName=Strategy game. Annex v4.0
+Comment=A real time strategy game.
+Icon=/home/fusion809/annex/annex.png
+Exec="/home/fusion809/annex/annex"
+Categories=Game;StrategyGame
+

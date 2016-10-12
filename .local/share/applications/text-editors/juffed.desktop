@@ -1,0 +1,16 @@
+[Desktop Entry]
+Categories=Qt;Utility;TextEditor;
+Comment=Advanced text editor
+Exec[$e]=juffed %F
+GenericName=
+Icon=juffed
+MimeType=text/plain;
+Name=JuffEd text editor
+Path[$e]=
+StartupNotify=false
+Terminal=0
+TerminalOptions=
+Type=Application
+X-SuSE-translate=true
+X-TDE-SubstituteUID=false
+X-TDE-Username=

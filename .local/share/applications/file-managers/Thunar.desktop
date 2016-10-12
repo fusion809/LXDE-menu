@@ -1,0 +1,15 @@
+[Desktop Entry]
+Categories=System;Utility;Core;GTK;FileTools;FileManager;
+Comment=Browse the filesystem with the file manager
+Exec[$e]=thunar %F
+GenericName=
+Icon=Thunar
+Name=Thunar
+NoDisplay=false
+Path[$e]=
+StartupNotify=true
+Terminal=0
+TerminalOptions=
+Type=Application
+X-TDE-SubstituteUID=false
+X-TDE-Username=

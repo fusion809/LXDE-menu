@@ -1,0 +1,20 @@
+[Desktop Action Dropdown]
+Exec=qterminal --drop
+Icon=utilities-terminal
+Name=Drop-down terminal
+
+[Desktop Entry]
+Actions=Dropdown;
+Categories=Qt;System;TerminalEmulator;
+Comment=Terminal emulator
+Exec[$e]=qterminal
+GenericName=
+Icon=utilities-terminal
+Name=QTerminal
+Path[$e]=
+StartupNotify=true
+Terminal=0
+TerminalOptions=
+Type=Application
+X-TDE-SubstituteUID=false
+X-TDE-Username=

@@ -16,8 +16,8 @@ Version=1.0
 X-Ayatana-Desktop-Shortcuts=Oldschool;UpdateClient;
 X-DBUS-ServiceName=
 X-DBUS-StartupType=
-X-KDE-SubstituteUID=false
-X-KDE-Username=
+X-TDE-SubstituteUID=false
+X-TDE-Username=
 
 [Oldschool Shortcut Group]
 Exec=runescape --prmfile=oldschool.prm

@@ -1,0 +1,16 @@
+[Desktop Entry]
+Categories=GNOME;GTK;AudioVideo;Player;Audio;
+Comment=Play and organize your music collection
+Exec[$e]=gnome-music
+GenericName=
+Icon=gnome-music
+Keywords=Music;Player;
+Name=GNOME Music
+Path[$e]=
+StartupNotify=true
+Terminal=0
+TerminalOptions=
+Type=Application
+X-TDE-SubstituteUID=false
+X-TDE-Username=
+X-Ubuntu-Gettext-Domain=gnome-music

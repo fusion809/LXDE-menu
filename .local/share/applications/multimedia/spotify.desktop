@@ -1,0 +1,16 @@
+[Desktop Entry]
+Categories=Audio;Music;Player;AudioVideo;
+Comment=Spotify streaming music client
+Exec[$e]=spotify %U
+GenericName=
+Icon=spotify-client
+MimeType=x-scheme-handler/spotify;
+Name=Spotify
+Path[$e]=
+StartupNotify=true
+Terminal=0
+TerminalOptions=
+TryExec=spotify
+Type=Application
+X-TDE-SubstituteUID=false
+X-TDE-Username=

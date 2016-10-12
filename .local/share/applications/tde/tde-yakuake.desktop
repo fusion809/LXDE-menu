@@ -1,0 +1,18 @@
+[Desktop Entry]
+Categories=Qt;TDE;System;TerminalEmulator;
+Comment=A Quake-style terminal emulator based on TDE Konsole technology.
+Encoding=UTF-8
+Exec[$e]=yakuake
+GenericName=
+Icon=yakuake
+Name=Yakuake
+Path[$e]=
+StartupNotify=false
+Terminal=0
+TerminalOptions=
+Type=Application
+X-DCOP-ServiceType=Unique
+X-DocPath=yakuake/index.html
+X-TDE-StartupNotify=false
+X-TDE-SubstituteUID=false
+X-TDE-Username=

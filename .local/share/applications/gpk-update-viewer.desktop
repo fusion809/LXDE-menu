@@ -1,0 +1,16 @@
+[Desktop Entry]
+Categories=GNOME;GTK;System;
+Comment=Update software installed on the system
+Exec[$e]=gpk-update-viewer
+GenericName=
+Icon=system-software-update
+Name=GPK Package Updater
+NotShowIn=KDE;
+Path[$e]=
+StartupNotify=true
+Terminal=0
+TerminalOptions=
+Type=Application
+X-GNOME-UsesNotifications=true
+X-TDE-SubstituteUID=false
+X-TDE-Username=

@@ -1,0 +1,15 @@
+[Desktop Entry]
+Categories=PackageManager;System;
+Comment=Install, remove and upgrade software packages
+Exec[$e]=synaptic
+GenericName=
+Icon=synaptic
+Name=Synaptic Package Manager
+OnlyShowIn=TDE;
+Path[$e]=
+StartupNotify=true
+Terminal=0
+TerminalOptions=
+Type=Application
+X-TDE-SubstituteUID=true
+X-TDE-Username=

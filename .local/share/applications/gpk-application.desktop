@@ -1,0 +1,17 @@
+[Desktop Entry]
+Categories=GNOME;GTK;System;Settings;PackageManager;
+Comment=Add or remove software installed on the system
+Exec[$e]=gpk-application
+GenericName=
+Icon=system-software-install
+Keywords=Updates;Upgrade;Sources;Repositories;Preferences;Install;Store;
+Name=GPK Packages
+NotShowIn=KDE;
+Path[$e]=
+StartupNotify=true
+Terminal=0
+TerminalOptions=
+Type=Application
+X-GNOME-UsesNotifications=true
+X-TDE-SubstituteUID=false
+X-TDE-Username=

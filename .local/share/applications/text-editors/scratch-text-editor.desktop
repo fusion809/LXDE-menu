@@ -1,0 +1,30 @@
+[Desktop Action AboutDialog]
+Exec=scratch-text-editor --about
+Name=About Scratch
+
+[Desktop Action NewDocument]
+Exec=scratch-text-editor --new-tab
+Name=New Document
+
+[Desktop Action NewWindow]
+Exec=scratch-text-editor --new-window
+Name=New Window
+
+[Desktop Entry]
+Actions=NewWindow;NewDocument;AboutDialog;
+Categories=GNOME;GTK;Utility;TextEditor;
+Comment=Edit text files
+Exec[$e]=scratch-text-editor %U
+GenericName=
+Icon=accessories-text-editor
+Keywords=Notepad;IDE;Plain;
+MimeType=text/plain;
+Name=Scratch
+Path[$e]=
+StartupNotify=true
+Terminal=0
+TerminalOptions=
+Type=Application
+X-GNOME-Gettext-Domain=scratch-text-editor
+X-TDE-SubstituteUID=false
+X-TDE-Username=
